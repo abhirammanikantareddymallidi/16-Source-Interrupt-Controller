@@ -1,0 +1,505 @@
+$date
+    Oct 10, 2026  21:05:19
+$end
+$version
+    TOOL:	ncsim(64)	15.20-s086
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_interrupt_controller $end
+$var reg       1 !    clk  $end
+$var reg       1 "    reset  $end
+$var reg      16 #    irq [15:0] $end
+$var reg      16 $    mask [15:0] $end
+$var reg      16 %    trigger_type [15:0] $end
+$var reg       1 &    cpu_ack  $end
+$var reg       1 '    cpu_eoi  $end
+$var wire      1 (    cpu_irq  $end
+$var wire      4 )    irq_id [3:0] $end
+$var wire      1 *    active  $end
+$var wire      1 +    stack_full  $end
+$var wire      1 ,    stack_empty  $end
+
+$scope module dut $end
+$var parameter 32 -    IRQ_COUNT  $end
+$var parameter 32 .    STACK_DEPTH  $end
+$var parameter 32 /    IRQ_WIDTH  $end
+$var wire      1 0    clk  $end
+$var wire      1 1    reset  $end
+$var wire     16 2    irq [15:0] $end
+$var wire     16 3    mask [15:0] $end
+$var wire     16 4    trigger_type [15:0] $end
+$var wire      1 5    cpu_ack  $end
+$var wire      1 6    cpu_eoi  $end
+$var wire      1 (    cpu_irq  $end
+$var wire      4 )    irq_id [3:0] $end
+$var wire      1 *    active  $end
+$var wire      1 +    stack_full  $end
+$var wire      1 ,    stack_empty  $end
+$var parameter 32 7    PTR_WIDTH  $end
+$var reg      16 8    irq_previous [15:0] $end
+$var reg      16 9    pending [15:0] $end
+$var reg       4 :    active_irq_id [3:0] $end
+$var reg       1 ;    active_valid  $end
+$var reg       3 <    stack_pointer [2:0] $end
+$var wire     16 =    irq_request [15:0] $end
+$var wire     16 >    enabled [15:0] $end
+$var reg       1 ?    candidate_valid  $end
+$var reg       4 @    candidate_id [3:0] $end
+$var wire      1 A    accept_irq  $end
+$var wire      1 B    finish_irq  $end
+$var wire     16 C    clear_vector [15:0] $end
+$var integer  32 D    i  $end
+$var integer  32 E    j  $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b11 7
+b100 /
+b100 .
+b10000 -
+0!
+1"
+b0 #
+b0 $
+b0 %
+0&
+0'
+0(
+b0 )
+0*
+0+
+1,
+00
+11
+b0 2
+b0 3
+b0 4
+05
+06
+b0 8
+b0 9
+b0 :
+0;
+b0 <
+b0 =
+b0 >
+0?
+b0 @
+0A
+0B
+b0 C
+b11111111111111111111111111111111 D
+b100 E
+$end
+#5000
+1!
+10
+b0 E
+b1 E
+b10 E
+b11 E
+b100 E
+#6000
+0"
+b100000 #
+b100000 2
+01
+b100000 =
+#10000
+0!
+00
+#15000
+1!
+10
+b100000 9
+b100000 8
+b100000 >
+b1111 D
+b1110 D
+b1101 D
+b1100 D
+b1011 D
+b1010 D
+b1001 D
+b1000 D
+b111 D
+b110 D
+b101 D
+1?
+b101 @
+b100 D
+b11 D
+b10 D
+b1 D
+b0 D
+b11111111111111111111111111111111 D
+1(
+b101 )
+#17000
+1&
+15
+1A
+b100000 C
+#20000
+0!
+00
+#25000
+1!
+10
+b101 :
+1;
+1*
+0(
+0A
+b0 C
+#26000
+0&
+b0 #
+b0 2
+05
+b0 =
+#30000
+0!
+00
+#35000
+1!
+10
+b0 8
+#36000
+b100 #
+b100 2
+b100 =
+#40000
+0!
+00
+#45000
+1!
+10
+b100100 9
+b100 8
+b100100 >
+0?
+b0 @
+b1111 D
+b1110 D
+b1101 D
+b1100 D
+b1011 D
+b1010 D
+b1001 D
+b1000 D
+b111 D
+b110 D
+b101 D
+1?
+b101 @
+b100 D
+b11 D
+b10 D
+b10 @
+b1 D
+b0 D
+b11111111111111111111111111111111 D
+1(
+b10 )
+#46000
+1&
+15
+1A
+b100 C
+#50000
+0!
+00
+#55000
+1!
+10
+b1 <
+b10 :
+0(
+0,
+0A
+b0 C
+#56000
+0&
+b0 #
+b0 2
+05
+b0 =
+#60000
+0!
+00
+#65000
+1!
+10
+b0 8
+#66000
+1'
+16
+1B
+#70000
+0!
+00
+#75000
+1!
+10
+b101 :
+b0 <
+1,
+b101 )
+1(
+b10 )
+#76000
+0'
+1'
+#80000
+0!
+00
+#85000
+1!
+10
+b0 :
+0;
+0B
+0*
+#86000
+0'
+b10000000 $
+b10000000 #
+b10000000 2
+b10000000 3
+06
+b10000000 =
+#90000
+0!
+00
+#95000
+1!
+10
+b10100100 9
+b10000000 8
+#96000
+b0 $
+b0 3
+b10100100 >
+0?
+b0 @
+b1111 D
+b1110 D
+b1101 D
+b1100 D
+b1011 D
+b1010 D
+b1001 D
+b1000 D
+b111 D
+1?
+b111 @
+b110 D
+b101 D
+b101 @
+b100 D
+b11 D
+b10 D
+b10 @
+b1 D
+b0 D
+b11111111111111111111111111111111 D
+#97000
+1&
+15
+1A
+b100 C
+#100000
+0!
+00
+#105000
+1!
+10
+b10 :
+1;
+b10100000 9
+b10100000 >
+1*
+0(
+0A
+0?
+b0 @
+b1111 D
+b1110 D
+b1101 D
+b1100 D
+b1011 D
+b1010 D
+b1001 D
+b1000 D
+b111 D
+1?
+b111 @
+b110 D
+b101 D
+b101 @
+b100 D
+b11 D
+b10 D
+b1 D
+b0 D
+b11111111111111111111111111111111 D
+b0 C
+#106000
+0&
+b0 #
+b0 2
+05
+b0 =
+#110000
+0!
+00
+#115000
+1!
+10
+b0 8
+#116000
+1'
+16
+1B
+#120000
+0!
+00
+#125000
+1!
+10
+b0 :
+0;
+0B
+0*
+b0 )
+1(
+b101 )
+#126000
+0'
+b10 %
+b10 #
+b10 2
+b10 4
+06
+b10 =
+#130000
+0!
+00
+#135000
+1!
+10
+b10100010 9
+b10 8
+b0 =
+b10100010 >
+0?
+b0 @
+b1111 D
+b1110 D
+b1101 D
+b1100 D
+b1011 D
+b1010 D
+b1001 D
+b1000 D
+b111 D
+1?
+b111 @
+b110 D
+b101 D
+b101 @
+b100 D
+b11 D
+b10 D
+b1 D
+b1 @
+b0 D
+b11111111111111111111111111111111 D
+b1 )
+#136000
+1&
+15
+1A
+b10 C
+#140000
+0!
+00
+#145000
+1!
+10
+b1 :
+1;
+b10100000 9
+b10100000 >
+1*
+0(
+0A
+0?
+b0 @
+b1111 D
+b1110 D
+b1101 D
+b1100 D
+b1011 D
+b1010 D
+b1001 D
+b1000 D
+b111 D
+1?
+b111 @
+b110 D
+b101 D
+b101 @
+b100 D
+b11 D
+b10 D
+b1 D
+b0 D
+b11111111111111111111111111111111 D
+b0 C
+#146000
+0&
+b0 #
+b0 2
+05
+#150000
+0!
+00
+#155000
+1!
+10
+b0 8
+#156000
+1'
+16
+1B
+#160000
+0!
+00
+#165000
+1!
+10
+b0 :
+0;
+0B
+0*
+b0 )
+1(
+b101 )
+#166000
+0'
+06
+#170000
+0!
+00
+#175000
+1!
+10
+#176000

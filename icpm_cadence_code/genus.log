@@ -1,0 +1,48 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[21:09:31.275841] Configured Lic search path (21.01-s002): 5280@14.139.1.126
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files interrupt_controller.tcl 
+Date:    Sat Oct 10 21:09:31 2026
+Host:    klef-vlsi53.kluniversity.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*1physical cpu*Intel(R) Core(TM) i3-8100T CPU @ 3.10GHz 6144KB) (7768568KB)
+PID:     5264
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[21:09:32.464907] Periodic Lic check successful
+[21:09:32.464912] Feature usage summary:
+[21:09:32.464912] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (9 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source interrupt_controller.tcl
+#@ Begin verbose source ./interrupt_controller.tcl
+@file(interrupt_controller.tcl) 12: set CLK_PERIOD      10.0    ;# ns -> 100 MHz (matches 'always #5 clk = ~clk' in TB)
+@file(interrupt_controller.tcl) 13: set CLK_UNCERTAINTY  0.25   ;# ns (jitter + skew margin)
+@file(interrupt_controller.tcl) 14: set CLK_LATENCY      0.0    ;# ns (ideal clock before CTS)
+@file(interrupt_controller.tcl) 15: set CLK_TRANSITION   0.10   ;# ns
+@file(interrupt_controller.tcl) 16: set IN_DELAY         2.0    ;# ns external delay on inputs
+@file(interrupt_controller.tcl) 17: set OUT_DELAY        2.0    ;# ns external delay on outputs
+@file(interrupt_controller.tcl) 18: set IN_DRIVE_CELL   "BUFX2" ;# <-- change to a buffer that exists in YOUR library
+@file(interrupt_controller.tcl) 19: set OUT_LOAD         0.05   ;# pF load on each output (adjust to library units)
+@file(interrupt_controller.tcl) 24: create_clock -name clk -period $CLK_PERIOD -waveform [list 0 [expr {$CLK_PERIOD/2.0}]] [get_ports clk]
+Error   : No designs are available. A design must first be read in and elaborated. [TUI-10] [get_ports]
+        : There is no design here.
+        : A design must first be read in with 'read_hdl' command and elaborated with 'elaborate' command.
+#@ End verbose source ./interrupt_controller.tcl
+Failed on find_unique_design
+Encountered problems processing file: interrupt_controller.tcl
+WARNING: This version of the tool is 1570 days old.

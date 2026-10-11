@@ -1,0 +1,19 @@
+[10/10 22:53:39      0s] 
+[10/10 22:53:39      0s] Cadence Innovus(TM) Implementation System.
+[10/10 22:53:39      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/10 22:53:39      0s] 
+[10/10 22:53:39      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[10/10 22:53:39      0s] Options:	
+[10/10 22:53:39      0s] Date:		Sat Oct 10 22:53:39 2026
+[10/10 22:53:39      0s] Host:		klef-vlsi53.kluniversity.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Core(TM) i3-8100T CPU @ 3.10GHz 6144KB)
+[10/10 22:53:39      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[10/10 22:53:39      0s] 
+[10/10 22:53:39      0s] License:
+[10/10 22:53:39      0s] 		[22:53:39.275905] Configured Lic search path (21.01-s002): 5280@14.139.1.126
+
+[10/10 22:55:39      0s] **WARN: (IMPLIC-23):		Current status: 'ERROR (LMF-10015): License call failed for feature First_Encounter_VIP, version 21.100 and quantity 1. The license server search path is defined as <none>. The FLEXnet error message is as follows,
+[10/10 22:55:39      0s]     FLEXnet ERROR(-15, 234, 0): Cannot connect to license server system.
+[10/10 22:55:39      0s] 
+[10/10 22:55:39      0s] Run 'lic_error LMF-10015' for more information.' (-15)
+[10/10 22:55:39      0s] 		Fail to find any innovus license...
+[10/10 22:55:39      0s] 		Check your Innovus license status.

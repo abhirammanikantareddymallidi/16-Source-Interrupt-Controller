@@ -1,0 +1,1867 @@
+[10/11 01:35:42      0s] 
+[10/11 01:35:42      0s] Cadence Innovus(TM) Implementation System.
+[10/11 01:35:42      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/11 01:35:42      0s] 
+[10/11 01:35:42      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[10/11 01:35:42      0s] Options:	
+[10/11 01:35:42      0s] Date:		Sun Oct 11 01:35:42 2026
+[10/11 01:35:42      0s] Host:		klef-vlsi53.kluniversity.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Core(TM) i3-8100T CPU @ 3.10GHz 6144KB)
+[10/11 01:35:42      0s] OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+[10/11 01:35:42      0s] 
+[10/11 01:35:42      0s] License:
+[10/11 01:35:42      0s] 		[01:35:42.275833] Configured Lic search path (21.01-s002): 5280@14.139.1.126
+
+[10/11 01:35:43      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[10/11 01:35:43      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/11 01:35:56     13s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[10/11 01:35:59     16s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[10/11 01:35:59     16s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[10/11 01:35:59     16s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[10/11 01:35:59     16s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[10/11 01:35:59     16s] @(#)CDS: CPE v21.15-s076
+[10/11 01:35:59     16s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[10/11 01:35:59     16s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[10/11 01:35:59     16s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[10/11 01:35:59     16s] @(#)CDS: RCDB 11.15.0
+[10/11 01:35:59     16s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[10/11 01:35:59     16s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[10/11 01:35:59     16s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_39338_klef-vlsi53.kluniversity.in_vlsi53_t2DKl6.
+
+[10/11 01:35:59     16s] Change the soft stacksize limit to 0.2%RAM (15 mbytes). Set global soft_stack_size_limit to change the value.
+[10/11 01:36:02     18s] 
+[10/11 01:36:02     18s] **INFO:  MMMC transition support version v31-84 
+[10/11 01:36:02     18s] 
+[10/11 01:36:02     18s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/11 01:36:02     18s] <CMD> suppressMessage ENCEXT-2799
+[10/11 01:36:02     18s] <CMD> win
+[10/11 01:37:10     29s] <CMD> save_global INTERRUPT1.globals
+[10/11 01:37:12     30s] <CMD> set init_gnd_net VSS
+[10/11 01:37:12     30s] <CMD> set init_lef_file ../../Cadence/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef
+[10/11 01:37:12     30s] <CMD> set init_verilog interrupt_netlist.v
+[10/11 01:37:12     30s] <CMD> set init_mmmc_file INTERRUPT.view
+[10/11 01:37:12     30s] <CMD> set init_pwr_net VDD
+[10/11 01:37:12     30s] <CMD> init_design
+[10/11 01:37:12     30s] #% Begin Load MMMC data ... (date=10/11 01:37:12, mem=1011.5M)
+[10/11 01:37:12     30s] #% End Load MMMC data ... (date=10/11 01:37:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1012.4M, current mem=1012.4M)
+[10/11 01:37:12     30s] 
+[10/11 01:37:12     30s] Loading LEF file ../../Cadence/FOUNDRY/digital/90nm/dig/lef/gsclib090_translated_ref.lef ...
+[10/11 01:37:12     30s] **WARN: (IMPLF-105):	The layer 'Oxide' specified in SAMENET spacing
+[10/11 01:37:12     30s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[10/11 01:37:12     30s] **WARN: (IMPLF-105):	The layer 'Poly' specified in SAMENET spacing
+[10/11 01:37:12     30s] rule is neither a routing layer nor a cut layer. The rule is ignored.
+[10/11 01:37:12     30s] Set DBUPerIGU to M2 pitch 580.
+[10/11 01:37:12     30s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:37:12     30s] Type 'man IMPLF-200' for more detail.
+[10/11 01:37:12     30s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[10/11 01:37:12     30s] Loading view definition file from INTERRUPT.view
+[10/11 01:37:12     30s] Reading MAX_TIMING timing library '/home/vlsi53/Cadence/FOUNDRY/digital/90nm/dig/lib/slow.lib' ...
+[10/11 01:37:13     30s] Read 479 cells in library 'slow' 
+[10/11 01:37:13     30s] Reading MIN_TIMING timing library '/home/vlsi53/Cadence/FOUNDRY/digital/90nm/dig/lib/fast.lib' ...
+[10/11 01:37:13     31s] Read 479 cells in library 'fast' 
+[10/11 01:37:13     31s] Ending "PreSetAnalysisView" (total cpu=0:00:00.9, real=0:00:01.0, peak res=1091.9M, current mem=1033.8M)
+[10/11 01:37:13     31s] *** End library_loading (cpu=0.02min, real=0.02min, mem=32.0M, fe_cpu=0.52min, fe_real=1.52min, fe_mem=1045.9M) ***
+[10/11 01:37:13     31s] #% Begin Load netlist data ... (date=10/11 01:37:13, mem=1033.8M)
+[10/11 01:37:13     31s] *** Begin netlist parsing (mem=1045.9M) ***
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3X1' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X4' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X2' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2X1' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR3X1' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2XL' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XNOR2X4' is defined in LEF but not in the timing library.
+[10/11 01:37:13     31s] Type 'man IMPVL-159' for more detail.
+[10/11 01:37:13     31s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[10/11 01:37:13     31s] To increase the message display limit, refer to the product command reference manual.
+[10/11 01:37:13     31s] Created 479 new cells from 2 timing libraries.
+[10/11 01:37:13     31s] Reading netlist ...
+[10/11 01:37:13     31s] Backslashed names will retain backslash and a trailing blank character.
+[10/11 01:37:13     31s] Reading verilog netlist 'interrupt_netlist.v'
+[10/11 01:37:13     31s] 
+[10/11 01:37:13     31s] *** Memory Usage v#1 (Current mem = 1045.914M, initial mem = 483.871M) ***
+[10/11 01:37:13     31s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1045.9M) ***
+[10/11 01:37:13     31s] #% End Load netlist data ... (date=10/11 01:37:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=1048.4M, current mem=1048.4M)
+[10/11 01:37:13     31s] Top level cell is interrupt_controller.
+[10/11 01:37:14     31s] Hooked 958 DB cells to tlib cells.
+[10/11 01:37:14     31s] Ending "BindLib:" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1058.9M, current mem=1058.9M)
+[10/11 01:37:14     31s] Starting recursive module instantiation check.
+[10/11 01:37:14     31s] No recursion found.
+[10/11 01:37:14     31s] Building hierarchical netlist for Cell interrupt_controller ...
+[10/11 01:37:14     31s] *** Netlist is unique.
+[10/11 01:37:14     31s] Setting Std. cell height to 5220 DBU (smallest netlist inst).
+[10/11 01:37:14     31s] ** info: there are 967 modules.
+[10/11 01:37:14     31s] ** info: there are 213 stdCell insts.
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] *** Memory Usage v#1 (Current mem = 1102.328M, initial mem = 483.871M) ***
+[10/11 01:37:14     31s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/11 01:37:14     31s] Type 'man IMPFP-3961' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/11 01:37:14     31s] Type 'man IMPFP-3961' for more detail.
+[10/11 01:37:14     31s] Horizontal Layer M1 offset = 290 (derived)
+[10/11 01:37:14     31s] Vertical Layer M2 offset = 290 (derived)
+[10/11 01:37:14     31s] Start create_tracks
+[10/11 01:37:14     31s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[10/11 01:37:14     31s] Extraction setup Started 
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] Trim Metal Layers:
+[10/11 01:37:14     31s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[10/11 01:37:14     31s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[10/11 01:37:14     31s] Type 'man IMPEXT-6202' for more detail.
+[10/11 01:37:14     31s] Reading Capacitance Table File ../../Cadence/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl ...
+[10/11 01:37:14     31s] Cap table was created using Encounter 05.20-s112_1.
+[10/11 01:37:14     31s] Process name: gpdk090_9l.
+[10/11 01:37:14     31s] Importing multi-corner RC tables ... 
+[10/11 01:37:14     31s] Summary of Active RC-Corners : 
+[10/11 01:37:14     31s]  
+[10/11 01:37:14     31s]  Analysis View: WC
+[10/11 01:37:14     31s]     RC-Corner Name        : RC_CORNERS
+[10/11 01:37:14     31s]     RC-Corner Index       : 0
+[10/11 01:37:14     31s]     RC-Corner Temperature : 25 Celsius
+[10/11 01:37:14     31s]     RC-Corner Cap Table   : '../../Cadence/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl'
+[10/11 01:37:14     31s]     RC-Corner PreRoute Res Factor         : 1
+[10/11 01:37:14     31s]     RC-Corner PreRoute Cap Factor         : 1
+[10/11 01:37:14     31s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[10/11 01:37:14     31s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[10/11 01:37:14     31s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[10/11 01:37:14     31s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[10/11 01:37:14     31s]     RC-Corner Technology file: '../../Cadence/FOUNDRY/digital/90nm/dig/qrc/gpdk090_9l.tch'
+[10/11 01:37:14     31s]  
+[10/11 01:37:14     31s]  Analysis View: BC
+[10/11 01:37:14     31s]     RC-Corner Name        : RC_CORNERS
+[10/11 01:37:14     31s]     RC-Corner Index       : 0
+[10/11 01:37:14     31s]     RC-Corner Temperature : 25 Celsius
+[10/11 01:37:14     31s]     RC-Corner Cap Table   : '../../Cadence/FOUNDRY/digital/90nm/dig/captable/gpdk090.lef.extended.CapTbl'
+[10/11 01:37:14     31s]     RC-Corner PreRoute Res Factor         : 1
+[10/11 01:37:14     31s]     RC-Corner PreRoute Cap Factor         : 1
+[10/11 01:37:14     31s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[10/11 01:37:14     31s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[10/11 01:37:14     31s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[10/11 01:37:14     31s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[10/11 01:37:14     31s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[10/11 01:37:14     31s]     RC-Corner Technology file: '../../Cadence/FOUNDRY/digital/90nm/dig/qrc/gpdk090_9l.tch'
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] Trim Metal Layers:
+[10/11 01:37:14     31s] LayerId::1 widthSet size::4
+[10/11 01:37:14     31s] LayerId::2 widthSet size::4
+[10/11 01:37:14     31s] LayerId::3 widthSet size::4
+[10/11 01:37:14     31s] LayerId::4 widthSet size::4
+[10/11 01:37:14     31s] LayerId::5 widthSet size::4
+[10/11 01:37:14     31s] LayerId::6 widthSet size::4
+[10/11 01:37:14     31s] LayerId::7 widthSet size::4
+[10/11 01:37:14     31s] LayerId::8 widthSet size::4
+[10/11 01:37:14     31s] LayerId::9 widthSet size::3
+[10/11 01:37:14     31s] Updating RC grid for preRoute extraction ...
+[10/11 01:37:14     31s] eee: pegSigSF::1.070000
+[10/11 01:37:14     31s] Initializing multi-corner capacitance tables ... 
+[10/11 01:37:14     31s] Initializing multi-corner resistance tables ...
+[10/11 01:37:14     31s] eee: l::1 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::2 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::3 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::8 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] eee: l::9 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[10/11 01:37:14     31s] {RT RC_CORNERS 0 9 9 {8 0} 1}
+[10/11 01:37:14     31s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 wcR=0.700000 newSi=0.000000 wHLS=1.750000 siPrev=0 viaL=0.000000
+[10/11 01:37:14     31s] *Info: initialize multi-corner CTS.
+[10/11 01:37:14     31s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1324.5M, current mem=1090.5M)
+[10/11 01:37:14     31s] Reading timing constraints file 'interrupt_output.sdc' ...
+[10/11 01:37:14     31s] Current (total cpu=0:00:31.9, real=0:01:32, peak res=1347.2M, current mem=1347.2M)
+[10/11 01:37:14     31s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File interrupt_output.sdc, Line 9).
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File interrupt_output.sdc, Line 10).
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (IMPCTE-290):	Could not locate cell BUFX2 in any library for view BC.
+[10/11 01:37:14     31s] Type 'man IMPCTE-290' for more detail.
+[10/11 01:37:14     31s] **WARN: (EMS-27):	Message (IMPCTE-290) has exceeded the current message display limit of 20.
+[10/11 01:37:14     31s] To increase the message display limit, refer to the product command reference manual.
+[10/11 01:37:14     31s] INFO (CTE): Reading of timing constraints file interrupt_output.sdc completed, with 2 WARNING
+[10/11 01:37:14     31s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=1391.5M, current mem=1391.5M)
+[10/11 01:37:14     31s] Current (total cpu=0:00:32.0, real=0:01:32, peak res=1391.5M, current mem=1391.5M)
+[10/11 01:37:14     31s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[10/11 01:37:14     31s] Summary for sequential cells identification: 
+[10/11 01:37:14     31s]   Identified SBFF number: 112
+[10/11 01:37:14     31s]   Identified MBFF number: 0
+[10/11 01:37:14     31s]   Identified SB Latch number: 0
+[10/11 01:37:14     31s]   Identified MB Latch number: 0
+[10/11 01:37:14     31s]   Not identified SBFF number: 8
+[10/11 01:37:14     31s]   Not identified MBFF number: 0
+[10/11 01:37:14     31s]   Not identified SB Latch number: 0
+[10/11 01:37:14     31s]   Not identified MB Latch number: 0
+[10/11 01:37:14     31s]   Number of sequential cells which are not FFs: 32
+[10/11 01:37:14     31s] Total number of combinational cells: 317
+[10/11 01:37:14     31s] Total number of sequential cells: 152
+[10/11 01:37:14     31s] Total number of tristate cells: 10
+[10/11 01:37:14     31s] Total number of level shifter cells: 0
+[10/11 01:37:14     31s] Total number of power gating cells: 0
+[10/11 01:37:14     31s] Total number of isolation cells: 0
+[10/11 01:37:14     31s] Total number of power switch cells: 0
+[10/11 01:37:14     31s] Total number of pulse generator cells: 0
+[10/11 01:37:14     31s] Total number of always on buffers: 0
+[10/11 01:37:14     31s] Total number of retention cells: 0
+[10/11 01:37:14     31s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[10/11 01:37:14     31s] Total number of usable buffers: 16
+[10/11 01:37:14     31s] List of unusable buffers:
+[10/11 01:37:14     31s] Total number of unusable buffers: 0
+[10/11 01:37:14     31s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[10/11 01:37:14     31s] Total number of usable inverters: 19
+[10/11 01:37:14     31s] List of unusable inverters:
+[10/11 01:37:14     31s] Total number of unusable inverters: 0
+[10/11 01:37:14     31s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[10/11 01:37:14     31s] Total number of identified usable delay cells: 8
+[10/11 01:37:14     31s] List of identified unusable delay cells:
+[10/11 01:37:14     31s] Total number of identified unusable delay cells: 0
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] TimeStamp Deleting Cell Server Begin ...
+[10/11 01:37:14     31s] 
+[10/11 01:37:14     31s] TimeStamp Deleting Cell Server End ...
+[10/11 01:37:14     32s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1393.9M, current mem=1393.9M)
+[10/11 01:37:14     32s] 
+[10/11 01:37:14     32s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[10/11 01:37:14     32s] Summary for sequential cells identification: 
+[10/11 01:37:14     32s]   Identified SBFF number: 112
+[10/11 01:37:14     32s]   Identified MBFF number: 0
+[10/11 01:37:14     32s]   Identified SB Latch number: 0
+[10/11 01:37:14     32s]   Identified MB Latch number: 0
+[10/11 01:37:14     32s]   Not identified SBFF number: 8
+[10/11 01:37:14     32s]   Not identified MBFF number: 0
+[10/11 01:37:14     32s]   Not identified SB Latch number: 0
+[10/11 01:37:14     32s]   Not identified MB Latch number: 0
+[10/11 01:37:14     32s]   Number of sequential cells which are not FFs: 32
+[10/11 01:37:14     32s]  Visiting view : WC
+[10/11 01:37:14     32s]    : PowerDomain = none : Weighted F : unweighted  = 36.00 (1.000) with rcCorner = 0
+[10/11 01:37:14     32s]    : PowerDomain = none : Weighted F : unweighted  = 33.00 (1.000) with rcCorner = -1
+[10/11 01:37:14     32s]  Visiting view : BC
+[10/11 01:37:14     32s]    : PowerDomain = none : Weighted F : unweighted  = 12.10 (1.000) with rcCorner = 0
+[10/11 01:37:14     32s]    : PowerDomain = none : Weighted F : unweighted  = 11.00 (1.000) with rcCorner = -1
+[10/11 01:37:14     32s] TLC MultiMap info (StdDelay):
+[10/11 01:37:14     32s]   : MIN_DELAY + MIN_TIMING + 1 + no RcCorner := 11ps
+[10/11 01:37:14     32s]   : MIN_DELAY + MIN_TIMING + 1 + RC_CORNERS := 12.1ps
+[10/11 01:37:14     32s]   : MAX_DELAY + MAX_TIMING + 1 + no RcCorner := 33ps
+[10/11 01:37:14     32s]   : MAX_DELAY + MAX_TIMING + 1 + RC_CORNERS := 36ps
+[10/11 01:37:14     32s]  Setting StdDelay to: 36ps
+[10/11 01:37:14     32s] 
+[10/11 01:37:14     32s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[10/11 01:37:14     32s] 
+[10/11 01:37:14     32s] TimeStamp Deleting Cell Server Begin ...
+[10/11 01:37:14     32s] 
+[10/11 01:37:14     32s] TimeStamp Deleting Cell Server End ...
+[10/11 01:37:14     32s] 
+[10/11 01:37:14     32s] *** Summary of all messages that are not suppressed in this session:
+[10/11 01:37:14     32s] Severity  ID               Count  Summary                                  
+[10/11 01:37:14     32s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[10/11 01:37:14     32s] WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+[10/11 01:37:14     32s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[10/11 01:37:14     32s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[10/11 01:37:14     32s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[10/11 01:37:14     32s] WARNING   IMPCTE-290         200  Could not locate cell %s in any library ...
+[10/11 01:37:14     32s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[10/11 01:37:14     32s] *** Message Summary: 1166 warning(s), 0 error(s)
+[10/11 01:37:14     32s] 
+[10/11 01:37:21     33s] <CMD> getIoFlowFlag
+[10/11 01:37:37     35s] <CMD> setIoFlowFlag 0
+[10/11 01:37:37     35s] <CMD> floorPlan -site gsclib090site -r 1 0.7 2.5 2.5 2.5 2.5
+[10/11 01:37:37     35s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/11 01:37:37     35s] Type 'man IMPFP-3961' for more detail.
+[10/11 01:37:37     35s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/11 01:37:37     35s] Type 'man IMPFP-3961' for more detail.
+[10/11 01:37:37     35s] Horizontal Layer M1 offset = 290 (derived)
+[10/11 01:37:37     35s] Vertical Layer M2 offset = 290 (derived)
+[10/11 01:37:37     35s] Start create_tracks
+[10/11 01:37:37     35s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[10/11 01:37:37     35s] <CMD> uiSetTool select
+[10/11 01:37:37     35s] <CMD> getIoFlowFlag
+[10/11 01:37:37     35s] <CMD> fit
+[10/11 01:37:38     35s] <CMD> setIoFlowFlag 0
+[10/11 01:37:38     35s] <CMD> floorPlan -site gsclib090site -r 0.989010989011 0.697802 2.61 2.61 2.61 2.61
+[10/11 01:37:38     35s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/11 01:37:38     35s] Type 'man IMPFP-3961' for more detail.
+[10/11 01:37:38     35s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[10/11 01:37:38     35s] Type 'man IMPFP-3961' for more detail.
+[10/11 01:37:38     35s] Horizontal Layer M1 offset = 290 (derived)
+[10/11 01:37:38     35s] Vertical Layer M2 offset = 290 (derived)
+[10/11 01:37:38     35s] Start create_tracks
+[10/11 01:37:38     35s] Generated pitch 0.29 in Metal8 is different from 0.87 defined in technology file in unpreferred direction.
+[10/11 01:37:38     35s] <CMD> uiSetTool select
+[10/11 01:37:38     35s] <CMD> getIoFlowFlag
+[10/11 01:37:38     35s] <CMD> fit
+[10/11 01:37:39     35s] <CMD> zoomBox -26.25100 -1.86900 68.14050 43.76600
+[10/11 01:37:40     35s] <CMD> zoomBox -19.08400 -1.32350 49.11450 31.64800
+[10/11 01:37:40     35s] <CMD> zoomBox -12.01150 -1.07100 29.87200 19.17800
+[10/11 01:37:40     35s] <CMD> zoomBox -7.67800 -0.90600 18.04450 11.53000
+[10/11 01:37:41     36s] <CMD> zoomBox -4.20600 -0.55100 9.22200 5.94100
+[10/11 01:37:41     36s] <CMD> zoomBox -2.73650 -0.38350 5.51150 3.60400
+[10/11 01:37:41     36s] <CMD> zoomBox -1.83350 -0.28050 3.23250 2.16850
+[10/11 01:37:41     36s] <CMD> zoomBox -1.09050 -0.16450 1.55500 1.11450
+[10/11 01:37:42     36s] <CMD> zoomBox -0.74500 -0.11350 0.88000 0.67200
+[10/11 01:37:42     36s] <CMD> zoomBox -0.53300 -0.08250 0.46550 0.40000
+[10/11 01:38:01     38s] <CMD> assignIoPins -pin *
+[10/11 01:38:01     38s] #% Begin assignIoPins (date=10/11 01:38:01, mem=1427.7M)
+[10/11 01:38:01     38s] Selected pin assignment: called on 60 pins ...
+[10/11 01:38:01     38s] The design is not placed. Using floorplan based method for pin assignment.
+[10/11 01:38:01     38s] #create default rule from bind_ndr_rule rule=0x7f347fbd1240 0x7f348338eff0
+[10/11 01:38:01     38s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:38:01     38s] Selected pin assignment: assigned all 60 pins successfully.
+[10/11 01:38:01     39s] #% End assignIoPins (date=10/11 01:38:01, total cpu=0:00:00.0, real=0:00:00.0, peak res=1440.5M, current mem=1439.6M)
+[10/11 01:38:08     40s] <CMD> zoomBox -0.83450 -0.23500 0.79250 0.55150
+[10/11 01:38:08     40s] <CMD> zoomBox -1.23000 -0.37850 1.02250 0.71050
+[10/11 01:38:09     40s] <CMD> zoomBox -0.96050 -0.28350 0.95500 0.64250
+[10/11 01:38:10     40s] <CMD> zoomBox -2.88100 -0.96050 1.43500 1.12600
+[10/11 01:38:10     40s] <CMD> zoomBox -6.49050 -1.98750 1.77950 2.01050
+[10/11 01:38:11     40s] <CMD> zoomBox -15.92650 -4.68550 2.71200 4.32550
+[10/11 01:38:12     40s] <CMD> zoomBox -36.62700 -11.50150 5.38250 8.80850
+[10/11 01:38:12     40s] <CMD> zoomBox -71.88100 -24.47850 8.59750 14.43000
+[10/11 01:38:12     40s] <CMD> zoomBox -118.73900 -42.90550 12.30800 20.45100
+[10/11 01:38:13     41s] <CMD> zoomBox -228.92600 -86.92250 22.12200 34.45000
+[10/11 01:38:13     41s] <CMD> zoomBox -451.45450 -187.69450 29.47500 44.81750
+[10/11 01:38:14     41s] <CMD> zoomBox -1020.16850 -429.53900 63.72600 94.48450
+[10/11 01:38:15     41s] <CMD> zoomBox -859.14900 -357.58350 62.16150 87.83650
+[10/11 01:38:16     41s] <CMD> zoomBox -419.29800 -158.44600 61.63200 74.06600
+[10/11 01:38:16     41s] <CMD> zoomBox -233.94350 -74.52850 61.40850 68.26350
+[10/11 01:38:16     41s] <CMD> zoomBox -92.93800 -10.69000 61.23900 63.84900
+[10/11 01:38:17     41s] <CMD> zoomBox -50.35950 8.46500 61.03350 62.31950
+[10/11 01:38:17     41s] <CMD> zoomBox -119.40950 -18.54900 61.97550 69.14400
+[10/11 01:38:18     42s] <CMD> zoomBox -92.30000 -10.66300 61.87750 63.87600
+[10/11 01:38:19     42s] <CMD> zoomBox -49.77300 0.81100 61.62050 54.66550
+[10/11 01:38:19     42s] <CMD> zoomBox -91.94050 -10.66350 62.23750 63.87600
+[10/11 01:38:43     45s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:38:43     45s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:38:43     45s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 1 -spreadType start -spacing 3 -start 29.435 57.42 -pin {{irq[1]} {irq[2]} {irq[3]} {irq[12]} {irq[13]} {irq[14]} {irq[15]} {mask[8]} {mask[9]} {mask[10]} {trigger_type[0]} {trigger_type[1]} {trigger_type[2]} {trigger_type[12]} {trigger_type[13]} {trigger_type[14]}}
+[10/11 01:38:43     45s] ### import design signature (2): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:38:43     45s] Successfully spread [16] pins.
+[10/11 01:38:43     45s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1465.7M).
+[10/11 01:38:43     45s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:38:56     47s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:38:56     47s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:38:56     47s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType start -spacing 2.5 -start 27.695 0.0 -pin {active cpu_eoi cpu_irq {irq[8]} {irq[9]} {irq[10]} {irq[11]} {irq_id[0]} {mask[2]} {mask[3]} {mask[4]} {mask[14]} {mask[15]} {trigger_type[6]} {trigger_type[7]} {trigger_type[8]}}
+[10/11 01:38:56     47s] ### import design signature (3): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:38:56     47s] Successfully spread [16] pins.
+[10/11 01:38:56     47s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1465.9M).
+[10/11 01:38:56     47s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:39:07     49s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:39:07     49s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:39:07     49s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 4 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]} {trigger_type[15]}}
+[10/11 01:39:07     49s] ### import design signature (4): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:39:07     49s] Selected [15] pin for spreading. Could not spread (1 out of 15) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+[10/11 01:39:07     49s] 
+[10/11 01:39:07     49s] Following pin is not spread:
+[10/11 01:39:07     49s]   trigger_type[15]
+[10/11 01:39:07     49s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1466.1M).
+[10/11 01:39:11     50s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:39:19     51s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:39:19     51s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:39:19     51s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 4 -spreadType start -spacing 4 -start 58.0 29.725 -pin {clk cpu_ack {irq[0]} {irq_id[1]} {irq_id[2]} {irq_id[3]} {mask[5]} {mask[6]} {mask[7]} reset {trigger_type[9]} {trigger_type[10]} {trigger_type[11]}}
+[10/11 01:39:19     51s] ### import design signature (5): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:39:19     51s] Successfully spread [13] pins.
+[10/11 01:39:19     51s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1466.3M).
+[10/11 01:39:19     51s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:39:21     51s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:39:21     51s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:39:21     51s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 4 -spreadType start -spacing 4.0 -start 58.0 29.725 -pin {clk cpu_ack {irq[0]} {irq_id[1]} {irq_id[2]} {irq_id[3]} {mask[5]} {mask[6]} {mask[7]} reset {trigger_type[9]} {trigger_type[10]} {trigger_type[11]}}
+[10/11 01:39:21     51s] ### import design signature (6): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:39:21     51s] Successfully spread [13] pins.
+[10/11 01:39:21     51s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1466.5M).
+[10/11 01:39:21     51s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingOffset 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingThreshold 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingJogDistance 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingLayers {}
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingOffset 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingThreshold 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingJogDistance 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingLayers {}
+[10/11 01:40:02     57s] <CMD> set sprCreateIeStripeWidth 10.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeStripeThreshold 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeStripeWidth 10.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeStripeThreshold 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingOffset 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingThreshold 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingJogDistance 1.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeRingLayers {}
+[10/11 01:40:02     57s] <CMD> set sprCreateIeStripeWidth 10.0
+[10/11 01:40:02     57s] <CMD> set sprCreateIeStripeThreshold 1.0
+[10/11 01:40:25     60s] 
+[10/11 01:40:25     60s] viaInitial starts at Sun Oct 11 01:40:25 2026
+viaInitial ends at Sun Oct 11 01:40:25 2026
+<CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:40:46     63s] The ring targets are set to core/block ring wires.
+[10/11 01:40:46     63s] addRing command will consider rows while creating rings.
+[10/11 01:40:46     63s] addRing command will disallow rings to go over rows.
+[10/11 01:40:46     63s] addRing command will ignore shorts while creating rings.
+[10/11 01:40:46     63s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:40:46     63s] 
+[10/11 01:40:46     63s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1487.0M)
+[10/11 01:40:46     63s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:40:46     63s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:40:46     63s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:40:49     63s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:40:49     63s] The ring targets are set to core/block ring wires.
+[10/11 01:40:49     63s] addRing command will consider rows while creating rings.
+[10/11 01:40:49     63s] addRing command will disallow rings to go over rows.
+[10/11 01:40:49     63s] addRing command will ignore shorts while creating rings.
+[10/11 01:40:49     63s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:40:49     63s] 
+[10/11 01:40:49     63s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1487.0M)
+[10/11 01:40:49     63s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:40:49     63s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:40:49     63s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingOffset 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingThreshold 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingJogDistance 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingLayers {}
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingOffset 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingThreshold 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingJogDistance 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingLayers {}
+[10/11 01:41:06     66s] <CMD> set sprCreateIeStripeWidth 10.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeStripeThreshold 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeStripeWidth 10.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeStripeThreshold 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingOffset 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingThreshold 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingJogDistance 1.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeRingLayers {}
+[10/11 01:41:06     66s] <CMD> set sprCreateIeStripeWidth 10.0
+[10/11 01:41:06     66s] <CMD> set sprCreateIeStripeThreshold 1.0
+[10/11 01:41:51     72s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[10/11 01:41:51     72s] addStripe will allow jog to connect padcore ring and block ring.
+[10/11 01:41:51     72s] 
+[10/11 01:41:51     72s] Stripes will stop at the boundary of the specified area.
+[10/11 01:41:51     72s] When breaking rings, the power planner will consider the existence of blocks.
+[10/11 01:41:51     72s] Stripes will not extend to closest target.
+[10/11 01:41:51     72s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[10/11 01:41:51     72s] Stripes will not be created over regions without power planning wires.
+[10/11 01:41:51     72s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[10/11 01:41:51     72s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[10/11 01:41:51     72s] Offset for stripe breaking is set to 0.
+[10/11 01:41:51     72s] <CMD> addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1.8 -spacing 0.5 -number_of_sets 3 -start_from bottom -start_offset 1 -stop_offset 1 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+[10/11 01:41:51     72s] 
+[10/11 01:41:51     72s] Initialize fgc environment(mem: 1492.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:51     72s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:51     72s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:51     72s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:51     72s] Starting stripe generation ...
+[10/11 01:41:51     72s] Non-Default Mode Option Settings :
+[10/11 01:41:51     72s]   NONE
+[10/11 01:41:51     72s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[10/11 01:41:51     72s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[10/11 01:41:51     72s] Stripe generation is complete.
+[10/11 01:41:51     72s] vias are now being generated.
+[10/11 01:41:51     72s] addStripe created 6 wires.
+[10/11 01:41:51     72s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[10/11 01:41:51     72s] +--------+----------------+----------------+
+[10/11 01:41:51     72s] |  Layer |     Created    |     Deleted    |
+[10/11 01:41:51     72s] +--------+----------------+----------------+
+[10/11 01:41:51     72s] | Metal9 |        6       |       NA       |
+[10/11 01:41:51     72s] +--------+----------------+----------------+
+[10/11 01:41:55     72s] <CMD> setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+[10/11 01:41:55     72s] addStripe will allow jog to connect padcore ring and block ring.
+[10/11 01:41:55     72s] 
+[10/11 01:41:55     72s] Stripes will stop at the boundary of the specified area.
+[10/11 01:41:55     72s] When breaking rings, the power planner will consider the existence of blocks.
+[10/11 01:41:55     72s] Stripes will not extend to closest target.
+[10/11 01:41:55     72s] The power planner will set stripe antenna targets to none (no trimming allowed).
+[10/11 01:41:55     72s] Stripes will not be created over regions without power planning wires.
+[10/11 01:41:55     72s] The entire stripe set will break at the domain if one of the nets is not in the domain.
+[10/11 01:41:55     72s] addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+[10/11 01:41:55     72s] Offset for stripe breaking is set to 0.
+[10/11 01:41:55     72s] <CMD> addStripe -nets {VDD VSS} -layer Metal9 -direction horizontal -width 1.8 -spacing 0.5 -number_of_sets 3 -start_from bottom -start_offset 1 -stop_offset 1 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit Metal9 -padcore_ring_bottom_layer_limit Metal1 -block_ring_top_layer_limit Metal9 -block_ring_bottom_layer_limit Metal1 -use_wire_group 0 -snap_wire_center_to_grid None
+[10/11 01:41:55     72s] 
+[10/11 01:41:55     72s] Initialize fgc environment(mem: 1492.1M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:55     72s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:55     72s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:55     72s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:41:55     72s] Starting stripe generation ...
+[10/11 01:41:55     72s] Non-Default Mode Option Settings :
+[10/11 01:41:55     72s]   NONE
+[10/11 01:41:55     72s] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[10/11 01:41:55     72s] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[10/11 01:41:55     72s] **WARN: (IMPPP-170):	The power planner failed to create a wire at (2.610000, 4.510000) (55.389999, 4.510000) because same wire already exists.
+[10/11 01:41:55     72s] **WARN: (IMPPP-170):	The power planner failed to create a wire at (2.610000, 27.559999) (55.389999, 27.559999) because same wire already exists.
+[10/11 01:41:55     72s] **WARN: (IMPPP-170):	The power planner failed to create a wire at (2.610000, 50.610001) (55.389999, 50.610001) because same wire already exists.
+[10/11 01:41:55     72s] **WARN: (IMPPP-170):	The power planner failed to create a wire at (2.610000, 6.810000) (55.389999, 6.810000) because same wire already exists.
+[10/11 01:41:55     72s] **WARN: (IMPPP-170):	The power planner failed to create a wire at (2.610000, 29.860001) (55.389999, 29.860001) because same wire already exists.
+[10/11 01:41:55     72s] **WARN: (IMPPP-170):	The power planner failed to create a wire at (2.610000, 52.910000) (55.389999, 52.910000) because same wire already exists.
+[10/11 01:41:55     72s] Stripe generation is complete.
+[10/11 01:42:25     77s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:42:25     77s] The ring targets are set to core/block ring wires.
+[10/11 01:42:25     77s] addRing command will consider rows while creating rings.
+[10/11 01:42:25     77s] addRing command will disallow rings to go over rows.
+[10/11 01:42:25     77s] addRing command will ignore shorts while creating rings.
+[10/11 01:42:25     77s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:42:25     77s] 
+[10/11 01:42:25     77s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:42:25     77s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:42:25     77s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:42:25     77s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:42:35     78s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:42:35     78s] The ring targets are set to core/block ring wires.
+[10/11 01:42:35     78s] addRing command will consider rows while creating rings.
+[10/11 01:42:35     78s] addRing command will disallow rings to go over rows.
+[10/11 01:42:35     78s] addRing command will ignore shorts while creating rings.
+[10/11 01:42:35     78s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:42:35     78s] 
+[10/11 01:42:35     78s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1492.1M)
+[10/11 01:42:35     78s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:42:35     78s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:42:35     78s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:43:22     84s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[10/11 01:43:22     84s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+[10/11 01:43:22     84s] *** Begin SPECIAL ROUTE on Sun Oct 11 01:43:22 2026 ***
+[10/11 01:43:22     84s] SPECIAL ROUTE ran on directory: /home/vlsi53/Desktop/icpm
+[10/11 01:43:22     84s] SPECIAL ROUTE ran on machine: klef-vlsi53.kluniversity.in (Linux 4.18.0-425.3.1.el8.x86_64 x86_64 3.10Ghz)
+[10/11 01:43:22     84s] 
+[10/11 01:43:22     84s] Begin option processing ...
+[10/11 01:43:22     84s] srouteConnectPowerBump set to false
+[10/11 01:43:22     84s] routeSpecial set to true
+[10/11 01:43:22     84s] srouteBlockPin set to "useLef"
+[10/11 01:43:22     84s] srouteBottomLayerLimit set to 1
+[10/11 01:43:22     84s] srouteBottomTargetLayerLimit set to 1
+[10/11 01:43:22     84s] srouteConnectConverterPin set to false
+[10/11 01:43:22     84s] srouteCrossoverViaBottomLayer set to 1
+[10/11 01:43:22     84s] srouteCrossoverViaTopLayer set to 9
+[10/11 01:43:22     84s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[10/11 01:43:22     84s] srouteFollowCorePinEnd set to 3
+[10/11 01:43:22     84s] srouteJogControl set to "preferWithChanges differentLayer"
+[10/11 01:43:22     84s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[10/11 01:43:22     84s] sroutePadPinAllPorts set to true
+[10/11 01:43:22     84s] sroutePreserveExistingRoutes set to true
+[10/11 01:43:22     84s] srouteRoutePowerBarPortOnBothDir set to true
+[10/11 01:43:22     84s] srouteStopBlockPin set to "nearestTarget"
+[10/11 01:43:22     84s] srouteTopLayerLimit set to 9
+[10/11 01:43:22     84s] srouteTopTargetLayerLimit set to 9
+[10/11 01:43:22     84s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2998.00 megs.
+[10/11 01:43:22     84s] 
+[10/11 01:43:22     84s] Reading DB technology information...
+[10/11 01:43:22     85s] Finished reading DB technology information.
+[10/11 01:43:22     85s] Reading floorplan and netlist information...
+[10/11 01:43:22     85s] Finished reading floorplan and netlist information.
+[10/11 01:43:22     85s] Read in 19 layers, 9 routing layers, 1 overlap layer
+[10/11 01:43:22     85s] Read in 1 nondefault rule, 0 used
+[10/11 01:43:22     85s] Read in 487 macros, 35 used
+[10/11 01:43:22     85s] Read in 34 components
+[10/11 01:43:22     85s]   34 core components: 34 unplaced, 0 placed, 0 fixed
+[10/11 01:43:22     85s] Read in 59 physical pins
+[10/11 01:43:22     85s]   59 physical pins: 0 unplaced, 59 placed, 0 fixed
+[10/11 01:43:22     85s] Read in 1 logical pins
+[10/11 01:43:22     85s] Read in 60 nets
+[10/11 01:43:22     85s] Read in 2 special nets, 2 routed
+[10/11 01:43:22     85s] Read in 59 terminals
+[10/11 01:43:22     85s] Begin power routing ...
+[10/11 01:43:22     85s] ### import design signature (7): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:43:22     85s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+[10/11 01:43:22     85s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[10/11 01:43:22     85s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[10/11 01:43:22     85s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[10/11 01:43:22     85s] Type 'man IMPSR-1256' for more detail.
+[10/11 01:43:22     85s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[10/11 01:43:22     85s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+[10/11 01:43:22     85s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[10/11 01:43:22     85s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[10/11 01:43:22     85s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[10/11 01:43:22     85s] Type 'man IMPSR-1256' for more detail.
+[10/11 01:43:22     85s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] CPU time for VDD FollowPin 0 seconds
+[10/11 01:43:22     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:22     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:22     85s] CPU time for VSS FollowPin 0 seconds
+[10/11 01:43:22     85s]   Number of IO ports routed: 0
+[10/11 01:43:22     85s]   Number of Block ports routed: 0
+[10/11 01:43:22     85s]   Number of Stripe ports routed: 0  open: 12
+[10/11 01:43:22     85s]   Number of Core ports routed: 0  open: 42
+[10/11 01:43:22     85s]   Number of Pad ports routed: 0
+[10/11 01:43:22     85s]   Number of Power Bump ports routed: 0
+[10/11 01:43:22     85s]   Number of Followpin connections: 21
+[10/11 01:43:22     85s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3007.00 megs.
+[10/11 01:43:22     85s] 
+[10/11 01:43:22     85s] 
+[10/11 01:43:22     85s] 
+[10/11 01:43:22     85s]  Begin updating DB with routing results ...
+[10/11 01:43:22     85s]  Updating DB with 59 io pins ...
+[10/11 01:43:22     85s]  Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+[10/11 01:43:22     85s] Pin and blockage extraction finished
+[10/11 01:43:22     85s] 
+[10/11 01:43:22     85s] sroute created 21 wires.
+[10/11 01:43:22     85s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[10/11 01:43:22     85s] +--------+----------------+----------------+
+[10/11 01:43:22     85s] |  Layer |     Created    |     Deleted    |
+[10/11 01:43:22     85s] +--------+----------------+----------------+
+[10/11 01:43:22     85s] | Metal1 |       21       |       NA       |
+[10/11 01:43:22     85s] +--------+----------------+----------------+
+[10/11 01:43:24     85s] <CMD> setSrouteMode -viaConnectToShape { noshape }
+[10/11 01:43:24     85s] <CMD> sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { Metal1(1) Metal9(9) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { Metal1(1) Metal9(9) } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { Metal1(1) Metal9(9) }
+[10/11 01:43:24     85s] *** Begin SPECIAL ROUTE on Sun Oct 11 01:43:24 2026 ***
+[10/11 01:43:24     85s] SPECIAL ROUTE ran on directory: /home/vlsi53/Desktop/icpm
+[10/11 01:43:24     85s] SPECIAL ROUTE ran on machine: klef-vlsi53.kluniversity.in (Linux 4.18.0-425.3.1.el8.x86_64 x86_64 3.10Ghz)
+[10/11 01:43:24     85s] 
+[10/11 01:43:24     85s] Begin option processing ...
+[10/11 01:43:24     85s] srouteConnectPowerBump set to false
+[10/11 01:43:24     85s] routeSpecial set to true
+[10/11 01:43:24     85s] srouteBlockPin set to "useLef"
+[10/11 01:43:24     85s] srouteBottomLayerLimit set to 1
+[10/11 01:43:24     85s] srouteBottomTargetLayerLimit set to 1
+[10/11 01:43:24     85s] srouteConnectConverterPin set to false
+[10/11 01:43:24     85s] srouteCrossoverViaBottomLayer set to 1
+[10/11 01:43:24     85s] srouteCrossoverViaTopLayer set to 9
+[10/11 01:43:24     85s] srouteFloatingStripeTarget set to "blockring padring ring stripe ringpin blockpin followpin"
+[10/11 01:43:24     85s] srouteFollowCorePinEnd set to 3
+[10/11 01:43:24     85s] srouteJogControl set to "preferWithChanges differentLayer"
+[10/11 01:43:24     85s] srouteNoViaOnWireShape set to "padring ring stripe blockring blockpin coverpin blockwire corewire followpin iowire"
+[10/11 01:43:24     85s] sroutePadPinAllPorts set to true
+[10/11 01:43:24     85s] sroutePreserveExistingRoutes set to true
+[10/11 01:43:24     85s] srouteRoutePowerBarPortOnBothDir set to true
+[10/11 01:43:24     85s] srouteStopBlockPin set to "nearestTarget"
+[10/11 01:43:24     85s] srouteTopLayerLimit set to 9
+[10/11 01:43:24     85s] srouteTopTargetLayerLimit set to 9
+[10/11 01:43:24     85s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3009.00 megs.
+[10/11 01:43:24     85s] 
+[10/11 01:43:24     85s] Reading DB technology information...
+[10/11 01:43:25     85s] Finished reading DB technology information.
+[10/11 01:43:25     85s] Reading floorplan and netlist information...
+[10/11 01:43:25     85s] Finished reading floorplan and netlist information.
+[10/11 01:43:25     85s] Read in 19 layers, 9 routing layers, 1 overlap layer
+[10/11 01:43:25     85s] Read in 1 nondefault rule, 0 used
+[10/11 01:43:25     85s] Read in 487 macros, 35 used
+[10/11 01:43:25     85s] Read in 34 components
+[10/11 01:43:25     85s]   34 core components: 34 unplaced, 0 placed, 0 fixed
+[10/11 01:43:25     85s] Read in 59 physical pins
+[10/11 01:43:25     85s]   59 physical pins: 0 unplaced, 59 placed, 0 fixed
+[10/11 01:43:25     85s] Read in 1 logical pins
+[10/11 01:43:25     85s] Read in 60 nets
+[10/11 01:43:25     85s] Read in 2 special nets, 2 routed
+[10/11 01:43:25     85s] Read in 59 terminals
+[10/11 01:43:25     85s] Begin power routing ...
+[10/11 01:43:25     85s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VDD net.
+[10/11 01:43:25     85s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[10/11 01:43:25     85s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[10/11 01:43:25     85s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[10/11 01:43:25     85s] Type 'man IMPSR-1256' for more detail.
+[10/11 01:43:25     85s] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[10/11 01:43:25     85s] **WARN: (IMPSR-1253):	Unable to find any standard cell pin connected to the VSS net.
+[10/11 01:43:25     85s]  Run the globalNetConnect command or change the CPF file to ensure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as 'USE POWER' or 'USE GROUND' for the connection.
+[10/11 01:43:25     85s] **WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+[10/11 01:43:25     85s] **WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+[10/11 01:43:25     85s] Type 'man IMPSR-1256' for more detail.
+[10/11 01:43:25     85s] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VDD.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] CPU time for VDD FollowPin 0 seconds
+[10/11 01:43:25     85s] **WARN: (IMPSR-468):	Cannot find any standard cell pin connected to net VSS.
+[10/11 01:43:25     85s] Use setSrouteMode -corePinReferenceMacro <standard cell> to specify a reference macro for followpin connection, or run globalNetConnect command or change CPF file to make sure that the netlist reflects the correct power ground connections. The standard cell pins must be defined as "USE POWER" or "USE GROUND".
+[10/11 01:43:25     85s] CPU time for VSS FollowPin 0 seconds
+[10/11 01:43:25     85s]   Number of IO ports routed: 0
+[10/11 01:43:25     85s]   Number of Block ports routed: 0
+[10/11 01:43:25     85s]   Number of Stripe ports routed: 0  open: 12
+[10/11 01:43:25     85s]   Number of Core ports routed: 0  open: 42
+[10/11 01:43:25     85s]   Number of Pad ports routed: 0
+[10/11 01:43:25     85s]   Number of Power Bump ports routed: 0
+[10/11 01:43:25     85s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3011.00 megs.
+[10/11 01:43:25     85s] 
+[10/11 01:43:25     85s] 
+[10/11 01:43:25     85s] 
+[10/11 01:43:25     85s]  Begin updating DB with routing results ...
+[10/11 01:43:25     85s]  Updating DB with 59 io pins ...
+[10/11 01:43:25     85s]  Updating DB with 0 via definition ...
+[10/11 01:43:25     85s] sroute created 0 wire.
+[10/11 01:43:25     85s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[10/11 01:45:57    106s] <CMD> clearGlobalNets
+[10/11 01:45:57    106s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:45:57    106s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:10    107s] <CMD> clearGlobalNets
+[10/11 01:46:10    107s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:10    107s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:11    107s] <CMD> clearGlobalNets
+[10/11 01:46:11    107s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:11    107s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:11    107s] <CMD> clearGlobalNets
+[10/11 01:46:11    107s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:11    107s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:11    107s] <CMD> clearGlobalNets
+[10/11 01:46:11    107s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:11    107s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:40    111s] <CMD> clearGlobalNets
+[10/11 01:46:40    111s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:40    111s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:44    112s] <CMD> clearGlobalNets
+[10/11 01:46:44    112s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:44    112s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:44    112s] <CMD> clearGlobalNets
+[10/11 01:46:44    112s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:44    112s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> clearGlobalNets
+[10/11 01:46:45    112s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> clearGlobalNets
+[10/11 01:46:45    112s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> clearGlobalNets
+[10/11 01:46:45    112s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> clearGlobalNets
+[10/11 01:46:45    112s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:45    112s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:55    113s] <CMD> clearGlobalNets
+[10/11 01:46:55    113s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:55    113s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:56    113s] <CMD> clearGlobalNets
+[10/11 01:46:56    113s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:56    113s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:56    113s] <CMD> clearGlobalNets
+[10/11 01:46:56    113s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:56    113s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:56    113s] <CMD> clearGlobalNets
+[10/11 01:46:56    113s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:56    113s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:57    114s] <CMD> clearGlobalNets
+[10/11 01:46:57    114s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:57    114s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:57    114s] <CMD> clearGlobalNets
+[10/11 01:46:57    114s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:57    114s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:58    114s] <CMD> clearGlobalNets
+[10/11 01:46:58    114s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:58    114s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:58    114s] <CMD> clearGlobalNets
+[10/11 01:46:58    114s] <CMD> globalNetConnect VSS -type pgpin -pin VSS -instanceBasename * -hierarchicalInstance {}
+[10/11 01:46:58    114s] <CMD> globalNetConnect VDD -type pgpin -pin VDD -instanceBasename * -hierarchicalInstance {}
+[10/11 01:47:28    118s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:47:28    118s] The ring targets are set to core/block ring wires.
+[10/11 01:47:28    118s] addRing command will consider rows while creating rings.
+[10/11 01:47:28    118s] addRing command will disallow rings to go over rows.
+[10/11 01:47:28    118s] addRing command will ignore shorts while creating rings.
+[10/11 01:47:28    118s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:47:28    118s] 
+[10/11 01:47:28    118s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1503.1M)
+[10/11 01:47:28    118s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:47:28    118s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:47:28    118s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:47:31    118s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:47:31    118s] The ring targets are set to core/block ring wires.
+[10/11 01:47:31    118s] addRing command will consider rows while creating rings.
+[10/11 01:47:31    118s] addRing command will disallow rings to go over rows.
+[10/11 01:47:31    118s] addRing command will ignore shorts while creating rings.
+[10/11 01:47:31    118s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:47:31    118s] 
+[10/11 01:47:31    118s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1503.1M)
+[10/11 01:47:31    118s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:47:31    118s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:47:31    118s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:48:00    122s] <CMD> getIoFlowFlag
+[10/11 01:48:23    126s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:48:23    126s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:48:23    126s] <CMD> editPin -pinWidth 0.12 -pinDepth 0.585 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 1 -spreadType start -spacing 2 -start 29.435 57.42 -pin {{irq[1]} {irq[2]} {irq[3]} {irq[12]} {irq[13]} {irq[14]} {irq[15]} {mask[8]} {mask[9]} {mask[10]} {trigger_type[0]} {trigger_type[1]} {trigger_type[2]} {trigger_type[12]} {trigger_type[13]} {trigger_type[14]}}
+[10/11 01:48:23    126s] Successfully spread [16] pins.
+[10/11 01:48:23    126s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1503.1M).
+[10/11 01:48:23    126s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:48:33    127s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:48:33    127s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:48:33    127s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType start -spacing 0.2 -start 27.695 0.0 -pin {active cpu_eoi cpu_irq {irq[8]} {irq[9]} {irq[10]} {irq[11]} {irq_id[0]} {mask[2]} {mask[3]} {mask[4]} {mask[14]} {mask[15]} {trigger_type[6]} {trigger_type[7]} {trigger_type[8]}}
+[10/11 01:48:33    127s] ### import design signature (8): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:48:34    127s] Successfully spread [16] pins.
+[10/11 01:48:34    127s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1491.1M).
+[10/11 01:48:34    127s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:48:47    129s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:48:47    129s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:48:47    129s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Right -layer 4 -spreadType start -spacing 2 -start 58.0 29.725 -pin {clk cpu_ack {irq[0]} {irq_id[1]} {irq_id[2]} {irq_id[3]} {mask[5]} {mask[6]} {mask[7]} reset {trigger_type[9]} {trigger_type[10]} {trigger_type[11]}}
+[10/11 01:48:47    129s] ### import design signature (9): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:48:47    129s] Successfully spread [13] pins.
+[10/11 01:48:47    129s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1491.4M).
+[10/11 01:48:47    129s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:49:00    131s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:49:00    131s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:49:00    131s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 2 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]}}
+[10/11 01:49:00    131s] ### import design signature (10): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:49:00    131s] Successfully spread [14] pins.
+[10/11 01:49:00    131s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1491.6M).
+[10/11 01:49:00    131s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:49:03    131s] <CMD> pinAlignment -pinNames {irq[4] irq[5] irq[6] irq[7] mask[0] mask[1] mask[11] mask[12] mask[13] stack_empty stack_full trigger_type[3] trigger_type[4] trigger_type[5]} -ptnInst interrupt_controller -refObj {}
+[10/11 01:49:03    131s] ### import design signature (11): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:49:04    132s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:49:04    132s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:49:04    132s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 2.03 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]}}
+[10/11 01:49:04    132s] Successfully spread [14] pins.
+[10/11 01:49:04    132s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1491.8M).
+[10/11 01:49:04    132s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:49:18    134s] **ERROR: (IMPSYT-16250):	Choose the pin list first.
+[10/11 01:49:19    134s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:49:19    134s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:49:19    134s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 4 -spreadType start -spacing 5 -start 0.0 28.855 -pin {}
+[10/11 01:49:19    134s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+<CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:49:27    135s] **ERROR: (IMPSYT-16250):	Choose the pin list first.
+[10/11 01:49:30    136s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:49:30    136s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:49:30    136s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 4 -spreadType start -spacing 2 -start 0.0 28.855 -pin {}
+[10/11 01:49:30    136s] **ERROR: (IMPPTN-963):	Either specified pin name for the selected partition does not exist or has status 'cover'. Specify the pin or the list of pins correctly and run the command again.
+<CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:49:35    137s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:49:35    137s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:49:35    137s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 2 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]}}
+[10/11 01:49:35    137s] ### import design signature (12): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:49:35    137s] Successfully spread [14] pins.
+[10/11 01:49:35    137s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1492.0M).
+[10/11 01:49:35    137s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:49:42    138s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:49:42    138s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:49:42    138s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 5 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]}}
+[10/11 01:49:42    138s] ### import design signature (13): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:49:42    138s] Selected [14] pin for spreading. Could not spread (3 out of 14) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+[10/11 01:49:42    138s] 
+[10/11 01:49:42    138s] Following pins are not spread:
+[10/11 01:49:42    138s]   trigger_type[3]
+[10/11 01:49:42    138s]   trigger_type[4]
+[10/11 01:49:42    138s]   trigger_type[5]
+[10/11 01:49:42    138s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1492.2M).
+[10/11 01:49:58    142s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:50:00    142s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:50:00    142s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:50:00    142s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 5.0 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]}}
+[10/11 01:50:00    142s] ### import design signature (14): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:50:00    142s] Selected [14] pin for spreading. Could not spread (3 out of 14) pins, either because space provided for spreading pins are less than required or because of constraints on the selected pins or because of some blockage (pin blockage, routing blockage, power stripes etc.) on the selected region.
+[10/11 01:50:00    142s] 
+[10/11 01:50:00    142s] Following pins are not spread:
+[10/11 01:50:00    142s]   trigger_type[3]
+[10/11 01:50:00    142s]   trigger_type[4]
+[10/11 01:50:00    142s]   trigger_type[5]
+[10/11 01:50:00    142s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1492.4M).
+[10/11 01:50:04    144s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:50:08    144s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:50:08    144s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:50:08    144s] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 2 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]}}
+[10/11 01:50:08    144s] ### import design signature (15): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:50:08    144s] Successfully spread [14] pins.
+[10/11 01:50:08    144s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1492.6M).
+[10/11 01:50:08    144s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:50:14    145s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:50:14    145s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:50:14    145s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 4 -spreadType start -spacing 3 -start 0.0 28.855 -pin {{irq[4]} {irq[5]} {irq[6]} {irq[7]} {mask[0]} {mask[1]} {mask[11]} {mask[12]} {mask[13]} stack_empty stack_full {trigger_type[3]} {trigger_type[4]} {trigger_type[5]}}
+[10/11 01:50:14    145s] ### import design signature (16): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:50:14    145s] Successfully spread [14] pins.
+[10/11 01:50:14    145s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1492.8M).
+[10/11 01:50:14    145s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:50:23    146s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:50:23    146s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:50:23    146s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType start -spacing 2 -start 27.695 0.0 -pin {active cpu_eoi cpu_irq {irq[8]} {irq[9]} {irq[10]} {irq[11]} {irq_id[0]} {mask[2]} {mask[3]} {mask[4]} {mask[14]} {mask[15]} {trigger_type[6]} {trigger_type[7]} {trigger_type[8]}}
+[10/11 01:50:23    146s] ### import design signature (17): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:50:23    146s] Successfully spread [16] pins.
+[10/11 01:50:23    146s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1493.0M).
+[10/11 01:50:23    146s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:50:28    147s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:50:28    147s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:50:28    147s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType start -spacing 3 -start 27.695 0.0 -pin {active cpu_eoi cpu_irq {irq[8]} {irq[9]} {irq[10]} {irq[11]} {irq_id[0]} {mask[2]} {mask[3]} {mask[4]} {mask[14]} {mask[15]} {trigger_type[6]} {trigger_type[7]} {trigger_type[8]}}
+[10/11 01:50:28    147s] ### import design signature (18): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:50:28    147s] Successfully spread [16] pins.
+[10/11 01:50:28    147s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1493.2M).
+[10/11 01:50:28    147s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:50:29    147s] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[10/11 01:50:29    147s] <CMD> setPinAssignMode -pinEditInBatch true
+[10/11 01:50:29    147s] <CMD> editPin -pinWidth 0.14 -pinDepth 0.575 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType start -spacing 3.0 -start 27.695 0.0 -pin {active cpu_eoi cpu_irq {irq[8]} {irq[9]} {irq[10]} {irq[11]} {irq_id[0]} {mask[2]} {mask[3]} {mask[4]} {mask[14]} {mask[15]} {trigger_type[6]} {trigger_type[7]} {trigger_type[8]}}
+[10/11 01:50:29    147s] ### import design signature (19): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:50:29    147s] Successfully spread [16] pins.
+[10/11 01:50:29    147s] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1492.4M).
+[10/11 01:50:29    147s] <CMD> setPinAssignMode -pinEditInBatch false
+[10/11 01:50:40    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:40    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:40    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:40    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:40    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:40    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:40    149s] 
+[10/11 01:50:40    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:40    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:40    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:40    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:41    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:41    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:41    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:41    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:41    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:41    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:41    149s] 
+[10/11 01:50:41    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:41    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:41    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:41    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:41    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:41    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:41    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:41    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:41    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:41    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:41    149s] 
+[10/11 01:50:41    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:41    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:41    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:41    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:41    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:41    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:41    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:41    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:41    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:41    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:41    149s] 
+[10/11 01:50:41    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:41    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:41    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:41    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:41    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:41    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:41    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:41    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:41    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:41    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:41    149s] 
+[10/11 01:50:41    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:41    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:41    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:41    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:42    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:42    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:42    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:42    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:42    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:42    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:42    149s] 
+[10/11 01:50:42    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:42    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:42    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:42    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:42    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:42    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:42    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:42    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:42    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:42    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:42    149s] 
+[10/11 01:50:42    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:42    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:42    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:42    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:42    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:42    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:42    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:42    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:42    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:42    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:42    149s] 
+[10/11 01:50:42    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:42    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:42    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:42    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:42    149s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:42    149s] The ring targets are set to core/block ring wires.
+[10/11 01:50:42    149s] addRing command will consider rows while creating rings.
+[10/11 01:50:42    149s] addRing command will disallow rings to go over rows.
+[10/11 01:50:42    149s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:42    149s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:42    149s] 
+[10/11 01:50:42    149s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:42    149s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:42    149s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:42    149s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:50:43    150s] <CMD> setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer Metal9 -stacked_via_bottom_layer Metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+[10/11 01:50:43    150s] The ring targets are set to core/block ring wires.
+[10/11 01:50:43    150s] addRing command will consider rows while creating rings.
+[10/11 01:50:43    150s] addRing command will disallow rings to go over rows.
+[10/11 01:50:43    150s] addRing command will ignore shorts while creating rings.
+[10/11 01:50:43    150s] <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top Metal9 bottom Metal9 left Metal8 right Metal8} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 0.5 bottom 0.5 left 0.5 right 0.5} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+[10/11 01:50:43    150s] 
+[10/11 01:50:43    150s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1502.6M)
+[10/11 01:50:43    150s] **WARN: (IMPPP-220):	The power planner does not create core rings outside the design boundary. Check the design boundary, or specify valid offsets.
+[10/11 01:50:43    150s] **WARN: (IMPPP-4051):	Failed to add rings, because the IO cells might contain gaps. Run the 'addIoFiller' command to fill gaps between the cells and try again.
+[10/11 01:50:43    150s] Type 'man IMPPP-4051' for more detail.
+[10/11 01:51:18    155s] <CMD> setPlaceMode -fp false
+[10/11 01:51:18    155s] <CMD> place_design
+[10/11 01:51:18    155s] *** placeDesign #1 [begin] : totSession cpu/real = 0:02:35.3/0:15:34.1 (0.2), mem = 1502.6M
+[10/11 01:51:18    155s] [check_scan_connected]: number of scan connected with missing definition = 1, number of scan = 18, number of sequential = 56, percentage of missing scan cell = 1.79% (1 / 56)
+[10/11 01:51:18    155s] #Start colorize_geometry on Sun Oct 11 01:51:18 2026
+[10/11 01:51:18    155s] #
+[10/11 01:51:18    155s] ### Time Record (colorize_geometry) is installed.
+[10/11 01:51:18    155s] ### Time Record (Pre Callback) is installed.
+[10/11 01:51:18    155s] ### Time Record (Pre Callback) is uninstalled.
+[10/11 01:51:18    155s] ### Time Record (DB Import) is installed.
+[10/11 01:51:18    155s] ### info: trigger incremental cell import ( 487 new cells ).
+[10/11 01:51:18    155s] ### info: trigger incremental reloading library data ( #cell = 487 ).
+[10/11 01:51:18    155s] ### import design signature (20): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=1322146632 placement=101027546 pin_access=1 inst_pattern=1
+[10/11 01:51:18    155s] ### Time Record (DB Import) is uninstalled.
+[10/11 01:51:18    155s] ### Time Record (DB Export) is installed.
+[10/11 01:51:18    155s] Extracting standard cell pins and blockage ...... 
+[10/11 01:51:18    155s] Pin and blockage extraction finished
+[10/11 01:51:18    155s] ### export design design signature (21): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=1322146632 placement=101027546 pin_access=1 inst_pattern=1
+[10/11 01:51:18    155s] ### Time Record (DB Export) is uninstalled.
+[10/11 01:51:18    155s] ### Time Record (Post Callback) is installed.
+[10/11 01:51:18    155s] ### Time Record (Post Callback) is uninstalled.
+[10/11 01:51:18    155s] #
+[10/11 01:51:18    155s] #colorize_geometry statistics:
+[10/11 01:51:18    155s] #Cpu time = 00:00:00
+[10/11 01:51:18    155s] #Elapsed time = 00:00:00
+[10/11 01:51:18    155s] #Increased memory = 14.20 (MB)
+[10/11 01:51:18    155s] #Total memory = 1512.73 (MB)
+[10/11 01:51:18    155s] #Peak memory = 1513.59 (MB)
+[10/11 01:51:18    155s] #Number of warnings = 0
+[10/11 01:51:18    155s] #Total number of warnings = 0
+[10/11 01:51:18    155s] #Number of fails = 0
+[10/11 01:51:18    155s] #Total number of fails = 0
+[10/11 01:51:18    155s] #Complete colorize_geometry on Sun Oct 11 01:51:18 2026
+[10/11 01:51:18    155s] #
+[10/11 01:51:18    155s] ### import design signature (22): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1
+[10/11 01:51:18    155s] ### Time Record (colorize_geometry) is uninstalled.
+[10/11 01:51:18    155s] ### 
+[10/11 01:51:18    155s] ###   Scalability Statistics
+[10/11 01:51:18    155s] ### 
+[10/11 01:51:18    155s] ### ------------------------+----------------+----------------+----------------+
+[10/11 01:51:18    155s] ###   colorize_geometry     |        cpu time|    elapsed time|     scalability|
+[10/11 01:51:18    155s] ### ------------------------+----------------+----------------+----------------+
+[10/11 01:51:18    155s] ###   Pre Callback          |        00:00:00|        00:00:00|             1.0|
+[10/11 01:51:18    155s] ###   Post Callback         |        00:00:00|        00:00:00|             1.0|
+[10/11 01:51:18    155s] ###   DB Import             |        00:00:00|        00:00:00|             1.0|
+[10/11 01:51:18    155s] ###   DB Export             |        00:00:00|        00:00:00|             1.0|
+[10/11 01:51:18    155s] ###   Entire Command        |        00:00:00|        00:00:00|             1.0|
+[10/11 01:51:18    155s] ### ------------------------+----------------+----------------+----------------+
+[10/11 01:51:18    155s] ### 
+[10/11 01:51:18    155s] *** Starting placeDesign default flow ***
+[10/11 01:51:18    155s] ### Creating LA Mngr. totSessionCpu=0:02:36 mem=1520.6M
+[10/11 01:51:18    155s] ### Creating LA Mngr, finished. totSessionCpu=0:02:36 mem=1520.6M
+[10/11 01:51:18    155s] *** Start deleteBufferTree ***
+[10/11 01:51:18    155s] Info: Detect buffers to remove automatically.
+[10/11 01:51:18    155s] Analyzing netlist ...
+[10/11 01:51:18    155s] Updating netlist
+[10/11 01:51:18    155s] 
+[10/11 01:51:18    155s] *summary: 0 instances (buffers/inverters) removed
+[10/11 01:51:18    155s] *** Finish deleteBufferTree (0:00:00.2) ***
+[10/11 01:51:18    155s] **INFO: Enable pre-place timing setting for timing analysis
+[10/11 01:51:18    155s] Set Using Default Delay Limit as 101.
+[10/11 01:51:18    155s] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[10/11 01:51:18    155s] Set Default Net Delay as 0 ps.
+[10/11 01:51:18    155s] Set Default Net Load as 0 pF. 
+[10/11 01:51:18    155s] Set Default Input Pin Transition as 1 ps.
+[10/11 01:51:19    155s] **INFO: Analyzing IO path groups for slack adjustment
+[10/11 01:51:19    155s] Effort level <high> specified for reg2reg_tmp.39338 path_group
+[10/11 01:51:19    155s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/11 01:51:19    156s] AAE DB initialization (MEM=1614.16 CPU=0:00:00.0 REAL=0:00:00.0) 
+[10/11 01:51:19    156s] #################################################################################
+[10/11 01:51:19    156s] # Design Stage: PreRoute
+[10/11 01:51:19    156s] # Design Name: interrupt_controller
+[10/11 01:51:19    156s] # Design Mode: 90nm
+[10/11 01:51:19    156s] # Analysis Mode: MMMC Non-OCV 
+[10/11 01:51:19    156s] # Parasitics Mode: No SPEF/RCDB 
+[10/11 01:51:19    156s] # Signoff Settings: SI Off 
+[10/11 01:51:19    156s] #################################################################################
+[10/11 01:51:19    156s] Calculate delays in BcWc mode...
+[10/11 01:51:19    156s] Topological Sorting (REAL = 0:00:00.0, MEM = 1628.7M, InitMEM = 1627.7M)
+[10/11 01:51:19    156s] Start delay calculation (fullDC) (1 T). (MEM=1628.68)
+[10/11 01:51:19    156s] Start AAE Lib Loading. (MEM=1628.68)
+[10/11 01:51:19    156s] End AAE Lib Loading. (MEM=1666.84 CPU=0:00:00.0 Real=0:00:00.0)
+[10/11 01:51:19    156s] End AAE Lib Interpolated Model. (MEM=1666.84 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/11 01:51:19    156s] Total number of fetched objects 276
+[10/11 01:51:19    156s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/11 01:51:19    156s] End delay calculation. (MEM=1773.77 CPU=0:00:00.0 REAL=0:00:00.0)
+[10/11 01:51:19    156s] End delay calculation (fullDC). (MEM=1773.77 CPU=0:00:00.1 REAL=0:00:00.0)
+[10/11 01:51:19    156s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 1773.8M) ***
+[10/11 01:51:19    156s] **INFO: Disable pre-place timing setting for timing analysis
+[10/11 01:51:19    156s] Set Using Default Delay Limit as 1000.
+[10/11 01:51:19    156s] Set Default Net Delay as 1000 ps.
+[10/11 01:51:19    156s] Set Default Input Pin Transition as 0.1 ps.
+[10/11 01:51:19    156s] Set Default Net Load as 0.5 pF. 
+[10/11 01:51:19    156s] **INFO: Pre-place timing setting for timing analysis already disabled
+[10/11 01:51:19    156s] OPERPROF: Starting PlacementDelFiller
+ at level 1, MEM:1756.3M, EPOCH TIME: 1791663679.838400
+[10/11 01:51:19    156s] Deleted 0 physical inst  (cell - / prefix -).
+[10/11 01:51:19    156s] OPERPROF: Finished PlacementDelFiller
+ at level 1, CPU:0.000, REAL:0.000, MEM:1756.3M, EPOCH TIME: 1791663679.838528
+[10/11 01:51:19    156s] INFO: #ExclusiveGroups=0
+[10/11 01:51:19    156s] INFO: There are no Exclusive Groups.
+[10/11 01:51:19    156s] *** Starting "NanoPlace(TM) placement v#6 (mem=1756.3M)" ...
+[10/11 01:51:19    156s] Wait...
+[10/11 01:51:21    158s] *** Build Buffered Sizing Timing Model
+[10/11 01:51:21    158s] (cpu=0:00:02.0 mem=1764.3M) ***
+[10/11 01:51:22    158s] *** Build Virtual Sizing Timing Model
+[10/11 01:51:22    158s] (cpu=0:00:02.2 mem=1764.3M) ***
+[10/11 01:51:22    158s] No user-set net weight.
+[10/11 01:51:22    158s] Net fanout histogram:
+[10/11 01:51:22    158s] 2		: 160 (58.0%) nets
+[10/11 01:51:22    158s] 3		: 66 (23.9%) nets
+[10/11 01:51:22    158s] 4     -	14	: 48 (17.4%) nets
+[10/11 01:51:22    158s] 15    -	39	: 0 (0.0%) nets
+[10/11 01:51:22    158s] 40    -	79	: 2 (0.7%) nets
+[10/11 01:51:22    158s] 80    -	159	: 0 (0.0%) nets
+[10/11 01:51:22    158s] 160   -	319	: 0 (0.0%) nets
+[10/11 01:51:22    158s] 320   -	639	: 0 (0.0%) nets
+[10/11 01:51:22    158s] 640   -	1279	: 0 (0.0%) nets
+[10/11 01:51:22    158s] 1280  -	2559	: 0 (0.0%) nets
+[10/11 01:51:22    158s] 2560  -	5119	: 0 (0.0%) nets
+[10/11 01:51:22    158s] 5120+		: 0 (0.0%) nets
+[10/11 01:51:22    158s] no activity file in design. spp won't run.
+[10/11 01:51:22    158s] Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+[10/11 01:51:22    158s] Scan chains were not defined.
+[10/11 01:51:22    158s] Processing tracks to init pin-track alignment.
+[10/11 01:51:22    158s] z: 2, totalTracks: 1
+[10/11 01:51:22    158s] z: 4, totalTracks: 1
+[10/11 01:51:22    158s] z: 6, totalTracks: 1
+[10/11 01:51:22    158s] z: 8, totalTracks: 1
+[10/11 01:51:22    158s] #spOpts: hrOri=1 hrSnap=1 rpCkHalo=4 
+[10/11 01:51:22    158s] All LLGs are deleted
+[10/11 01:51:22    158s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:22    158s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:22    158s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1764.3M, EPOCH TIME: 1791663682.098524
+[10/11 01:51:22    158s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.098879
+[10/11 01:51:22    158s] # Building interrupt_controller llgBox search-tree.
+[10/11 01:51:22    158s] #std cell=213 (0 fixed + 213 movable) #buf cell=0 #inv cell=17 #block=0 (0 floating + 0 preplaced)
+[10/11 01:51:22    158s] #ioInst=0 #net=276 #term=896 #term/net=3.25, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=60
+[10/11 01:51:22    158s] stdCell: 213 single + 0 double + 0 multi
+[10/11 01:51:22    158s] Total standard cell length = 0.7366 (mm), area = 0.0019 (mm^2)
+[10/11 01:51:22    158s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1764.3M, EPOCH TIME: 1791663682.099363
+[10/11 01:51:22    158s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:22    158s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:22    158s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1764.3M, EPOCH TIME: 1791663682.099583
+[10/11 01:51:22    158s] Max number of tech site patterns supported in site array is 256.
+[10/11 01:51:22    158s] Core basic site is gsclib090site
+[10/11 01:51:22    158s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1764.3M, EPOCH TIME: 1791663682.110074
+[10/11 01:51:22    158s] After signature check, allow fast init is false, keep pre-filter is false.
+[10/11 01:51:22    158s] After signature check and other controls, allow fast init is false, keep pre-filter is false.
+[10/11 01:51:22    158s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.110230
+[10/11 01:51:22    158s] Use non-trimmed site array because memory saving is not enough.
+[10/11 01:51:22    158s] SiteArray: non-trimmed site array dimensions = 20 x 182
+[10/11 01:51:22    158s] SiteArray: use 28,672 bytes
+[10/11 01:51:22    158s] SiteArray: current memory after site array memory allocation 1764.3M
+[10/11 01:51:22    158s] SiteArray: FP blocked sites are writable
+[10/11 01:51:22    158s] Estimated cell power/ground rail width = 0.408 um
+[10/11 01:51:22    158s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[10/11 01:51:22    158s] OPERPROF:     Starting RoutingBlockageFromWireViaStBox at level 3, MEM:1764.3M, EPOCH TIME: 1791663682.110783
+[10/11 01:51:22    158s] OPERPROF:     Finished RoutingBlockageFromWireViaStBox at level 3, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.110838
+[10/11 01:51:22    158s] SiteArray: number of non floorplan blocked sites for llg default is 3640
+[10/11 01:51:22    158s] Atter site array init, number of instance map data is 0.
+[10/11 01:51:22    158s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.012, REAL:0.012, MEM:1764.3M, EPOCH TIME: 1791663682.111659
+[10/11 01:51:22    158s] 
+[10/11 01:51:22    158s]  Pre_CCE_Colorizing is not ON! (0:0:487:0)
+[10/11 01:51:22    158s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.012, REAL:0.012, MEM:1764.3M, EPOCH TIME: 1791663682.111863
+[10/11 01:51:22    158s] 
+[10/11 01:51:22    158s]  Pre_CCE_Colorizing is not ON! (0:0:487:0)
+[10/11 01:51:22    158s] Average module density = 0.698.
+[10/11 01:51:22    158s] Density for the design = 0.698.
+[10/11 01:51:22    158s]        = stdcell_area 2540 sites (1923 um^2) / alloc_area 3640 sites (2755 um^2).
+[10/11 01:51:22    158s] Pin Density = 0.2462.
+[10/11 01:51:22    158s]             = total # of pins 896 / total area 3640.
+[10/11 01:51:22    158s] OPERPROF: Starting spSetupSpareRegionBox at level 1, MEM:1764.3M, EPOCH TIME: 1791663682.112207
+[10/11 01:51:22    158s] OPERPROF: Finished spSetupSpareRegionBox at level 1, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.112294
+[10/11 01:51:22    158s] OPERPROF: Starting pre-place ADS at level 1, MEM:1764.3M, EPOCH TIME: 1791663682.112354
+[10/11 01:51:22    158s] OPERPROF:   Starting pre-place ADS Build Supply Map at level 2, MEM:1764.3M, EPOCH TIME: 1791663682.112511
+[10/11 01:51:22    158s] OPERPROF:     Starting ADS RRMInitG at level 3, MEM:1764.3M, EPOCH TIME: 1791663682.112554
+[10/11 01:51:22    158s] OPERPROF:     Finished ADS RRMInitG at level 3, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.112600
+[10/11 01:51:22    158s] OPERPROF:     Starting ADS RRMCPTSL at level 3, MEM:1764.3M, EPOCH TIME: 1791663682.112645
+[10/11 01:51:22    158s] OPERPROF:       Starting ADS RRMBLKB at level 4, MEM:1764.3M, EPOCH TIME: 1791663682.112686
+[10/11 01:51:22    158s] OPERPROF:       Finished ADS RRMBLKB at level 4, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.112736
+[10/11 01:51:22    158s] OPERPROF:       Starting ADS RRMCPTTR at level 4, MEM:1764.3M, EPOCH TIME: 1791663682.112777
+[10/11 01:51:22    158s] OPERPROF:       Finished ADS RRMCPTTR at level 4, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.112821
+[10/11 01:51:22    158s] OPERPROF:     Finished ADS RRMCPTSL at level 3, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.112860
+[10/11 01:51:22    158s] OPERPROF:   Finished pre-place ADS Build Supply Map at level 2, CPU:0.000, REAL:0.000, MEM:1764.3M, EPOCH TIME: 1791663682.112909
+[10/11 01:51:22    158s] ADSU 0.698 -> 0.799. site 3640.000 -> 3179.200. GS 20.880
+[10/11 01:51:22    158s] OPERPROF: Finished pre-place ADS at level 1, CPU:0.001, REAL:0.001, MEM:1764.3M, EPOCH TIME: 1791663682.113147
+[10/11 01:51:22    158s] OPERPROF: Starting spMPad at level 1, MEM:1747.3M, EPOCH TIME: 1791663682.113536
+[10/11 01:51:22    158s] OPERPROF:   Starting spContextMPad at level 2, MEM:1747.3M, EPOCH TIME: 1791663682.113596
+[10/11 01:51:22    158s] OPERPROF:   Finished spContextMPad at level 2, CPU:0.000, REAL:0.000, MEM:1747.3M, EPOCH TIME: 1791663682.113636
+[10/11 01:51:22    158s] OPERPROF: Finished spMPad at level 1, CPU:0.000, REAL:0.000, MEM:1747.3M, EPOCH TIME: 1791663682.113675
+[10/11 01:51:22    158s] Initial padding reaches pin density 0.538 for top
+[10/11 01:51:22    158s] InitPadU 0.799 -> 0.874 for top
+[10/11 01:51:22    158s] OPERPROF: Starting spSectionHeadInit at level 1, MEM:1747.3M, EPOCH TIME: 1791663682.114183
+[10/11 01:51:22    158s] OPERPROF: Finished spSectionHeadInit at level 1, CPU:0.000, REAL:0.000, MEM:1747.3M, EPOCH TIME: 1791663682.114268
+[10/11 01:51:22    158s] === lastAutoLevel = 6 
+[10/11 01:51:22    158s] OPERPROF: Starting spInitNetWt at level 1, MEM:1747.3M, EPOCH TIME: 1791663682.114497
+[10/11 01:51:22    158s] no activity file in design. spp won't run.
+[10/11 01:51:22    158s] [spp] 0
+[10/11 01:51:22    158s] [adp] 0:1:1:3
+[10/11 01:51:22    158s] OPERPROF: Finished spInitNetWt at level 1, CPU:0.087, REAL:0.087, MEM:1778.6M, EPOCH TIME: 1791663682.201327
+[10/11 01:51:22    158s] Clock gating cells determined by native netlist tracing.
+[10/11 01:51:22    158s] no activity file in design. spp won't run.
+[10/11 01:51:22    158s] no activity file in design. spp won't run.
+[10/11 01:51:22    158s] Effort level <high> specified for reg2reg path_group
+[10/11 01:51:22    159s] OPERPROF: Starting npMain at level 1, MEM:1781.6M, EPOCH TIME: 1791663682.268586
+[10/11 01:51:23    159s] OPERPROF:   Starting npPlace at level 2, MEM:1789.6M, EPOCH TIME: 1791663683.270317
+[10/11 01:51:23    159s] Iteration  1: Total net bbox = 3.466e+03 (1.71e+03 1.75e+03)
+[10/11 01:51:23    159s]               Est.  stn bbox = 3.607e+03 (1.80e+03 1.81e+03)
+[10/11 01:51:23    159s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1791.6M
+[10/11 01:51:23    159s] Iteration  2: Total net bbox = 3.466e+03 (1.71e+03 1.75e+03)
+[10/11 01:51:23    159s]               Est.  stn bbox = 3.607e+03 (1.80e+03 1.81e+03)
+[10/11 01:51:23    159s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1791.6M
+[10/11 01:51:23    159s] exp_mt_sequential is set from setPlaceMode option to 1
+[10/11 01:51:23    159s] Setting dotProdMode from setPlaceMode option to Multi-thread sequential mode (nrThread=1)
+[10/11 01:51:23    159s] place_exp_mt_interval set to default 32
+[10/11 01:51:23    159s] place_exp_mt_interval_bias (first half) set to default 0.750000
+[10/11 01:51:23    159s] Iteration  3: Total net bbox = 3.194e+03 (1.62e+03 1.58e+03)
+[10/11 01:51:23    159s]               Est.  stn bbox = 3.457e+03 (1.75e+03 1.71e+03)
+[10/11 01:51:23    159s]               cpu = 0:00:00.0 real = 0:00:00.0 mem = 1793.1M
+[10/11 01:51:23    159s] Total number of setup views is 1.
+[10/11 01:51:23    159s] Total number of active setup views is 1.
+[10/11 01:51:23    159s] Active setup views:
+[10/11 01:51:23    159s]     WC
+[10/11 01:51:23    159s] Iteration  4: Total net bbox = 3.829e+03 (1.77e+03 2.06e+03)
+[10/11 01:51:23    159s]               Est.  stn bbox = 4.217e+03 (1.95e+03 2.27e+03)
+[10/11 01:51:23    159s]               cpu = 0:00:00.1 real = 0:00:00.0 mem = 1793.1M
+[10/11 01:51:23    159s] Iteration  5: Total net bbox = 4.074e+03 (1.99e+03 2.08e+03)
+[10/11 01:51:23    159s]               Est.  stn bbox = 4.499e+03 (2.19e+03 2.31e+03)
+[10/11 01:51:23    159s]               cpu = 0:00:00.1 real = 0:00:00.0 mem = 1793.1M
+[10/11 01:51:23    159s] OPERPROF:   Finished npPlace at level 2, CPU:0.140, REAL:0.129, MEM:1793.1M, EPOCH TIME: 1791663683.399700
+[10/11 01:51:23    159s] OPERPROF: Finished npMain at level 1, CPU:0.142, REAL:1.132, MEM:1793.1M, EPOCH TIME: 1791663683.400155
+[10/11 01:51:23    159s] [adp] clock
+[10/11 01:51:23    159s] [adp] weight, nr nets, wire length
+[10/11 01:51:23    159s] [adp]      0        1  102.783000
+[10/11 01:51:23    159s] [adp] data
+[10/11 01:51:23    159s] [adp] weight, nr nets, wire length
+[10/11 01:51:23    159s] [adp]      0      275  4387.557000
+[10/11 01:51:23    159s] [adp] 0.000000|0.000000|0.000000
+[10/11 01:51:23    159s] Iteration  6: Total net bbox = 4.490e+03 (2.35e+03 2.14e+03)
+[10/11 01:51:23    159s]               Est.  stn bbox = 4.922e+03 (2.56e+03 2.36e+03)
+[10/11 01:51:23    159s]               cpu = 0:00:00.2 real = 0:00:01.0 mem = 1793.1M
+[10/11 01:51:23    159s] *** cost = 4.490e+03 (2.35e+03 2.14e+03) (cpu for global=0:00:00.2) real=0:00:01.0***
+[10/11 01:51:23    159s] Info: 0 clock gating cells identified, 0 (on average) moved 0/1
+[10/11 01:51:23    159s] Saved padding area to DB
+[10/11 01:51:23    159s] All LLGs are deleted
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1793.1M, EPOCH TIME: 1791663683.425949
+[10/11 01:51:23    159s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.426221
+[10/11 01:51:23    159s] Solver runtime cpu: 0:00:00.1 real: 0:00:00.1
+[10/11 01:51:23    159s] Core Placement runtime cpu: 0:00:00.1 real: 0:00:01.0
+[10/11 01:51:23    159s] **WARN: (IMPSP-9025):	No scan chain specified/traced.
+[10/11 01:51:23    159s] Type 'man IMPSP-9025' for more detail.
+[10/11 01:51:23    159s] OPERPROF: Starting RefinePlaceInit at level 1, MEM:1793.1M, EPOCH TIME: 1791663683.427626
+[10/11 01:51:23    159s] OPERPROF:   Starting DPlace-Init at level 2, MEM:1793.1M, EPOCH TIME: 1791663683.427713
+[10/11 01:51:23    159s] Processing tracks to init pin-track alignment.
+[10/11 01:51:23    159s] z: 2, totalTracks: 1
+[10/11 01:51:23    159s] z: 4, totalTracks: 1
+[10/11 01:51:23    159s] z: 6, totalTracks: 1
+[10/11 01:51:23    159s] z: 8, totalTracks: 1
+[10/11 01:51:23    159s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[10/11 01:51:23    159s] All LLGs are deleted
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] OPERPROF:     Starting spSiteCleanup(true) at level 3, MEM:1793.1M, EPOCH TIME: 1791663683.430219
+[10/11 01:51:23    159s] OPERPROF:     Finished spSiteCleanup(true) at level 3, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.430513
+[10/11 01:51:23    159s] OPERPROF:     Starting spInitSiteArr at level 3, MEM:1793.1M, EPOCH TIME: 1791663683.430616
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] OPERPROF:       Starting spiInitFpSiteArr at level 4, MEM:1793.1M, EPOCH TIME: 1791663683.430822
+[10/11 01:51:23    159s] Max number of tech site patterns supported in site array is 256.
+[10/11 01:51:23    159s] Core basic site is gsclib090site
+[10/11 01:51:23    159s] OPERPROF:         Starting spiCheckSiteIfFastDPInitAvailable at level 5, MEM:1793.1M, EPOCH TIME: 1791663683.440972
+[10/11 01:51:23    159s] After signature check, allow fast init is true, keep pre-filter is true.
+[10/11 01:51:23    159s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[10/11 01:51:23    159s] OPERPROF:         Finished spiCheckSiteIfFastDPInitAvailable at level 5, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.441107
+[10/11 01:51:23    159s] Fast DP-INIT is on for default
+[10/11 01:51:23    159s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[10/11 01:51:23    159s] Atter site array init, number of instance map data is 0.
+[10/11 01:51:23    159s] OPERPROF:       Finished spiInitFpSiteArr at level 4, CPU:0.011, REAL:0.011, MEM:1793.1M, EPOCH TIME: 1791663683.442238
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s]  Pre_CCE_Colorizing is not ON! (0:0:487:0)
+[10/11 01:51:23    159s] OPERPROF:       Starting CMU at level 4, MEM:1793.1M, EPOCH TIME: 1791663683.442395
+[10/11 01:51:23    159s] OPERPROF:       Finished CMU at level 4, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.442796
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] Bad Lib Cell Checking (CMU) is done! (0)
+[10/11 01:51:23    159s] OPERPROF:     Finished spInitSiteArr at level 3, CPU:0.012, REAL:0.012, MEM:1793.1M, EPOCH TIME: 1791663683.442909
+[10/11 01:51:23    159s] OPERPROF:     Starting PlacementInitSBTree at level 3, MEM:1793.1M, EPOCH TIME: 1791663683.442955
+[10/11 01:51:23    159s] OPERPROF:     Finished PlacementInitSBTree at level 3, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.442999
+[10/11 01:51:23    159s] [CPU] DPlace-Init (cpu=0:00:00.0, real=0:00:00.0, mem=1793.1MB).
+[10/11 01:51:23    159s] OPERPROF:   Finished DPlace-Init at level 2, CPU:0.015, REAL:0.015, MEM:1793.1M, EPOCH TIME: 1791663683.443191
+[10/11 01:51:23    159s] OPERPROF: Finished RefinePlaceInit at level 1, CPU:0.016, REAL:0.016, MEM:1793.1M, EPOCH TIME: 1791663683.443237
+[10/11 01:51:23    159s] TDRefine: refinePlace mode is spiral
+[10/11 01:51:23    159s] GigaOpt Checkpoint: Intermediate DB Saving Point beforeRefinePlace.39338.1
+[10/11 01:51:23    159s] OPERPROF: Starting RefinePlace at level 1, MEM:1793.1M, EPOCH TIME: 1791663683.443311
+[10/11 01:51:23    159s] *** Starting refinePlace (0:02:39 mem=1793.1M) ***
+[10/11 01:51:23    159s] Total net bbox length = 4.490e+03 (2.351e+03 2.139e+03) (ext = 1.572e+03)
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s]  Pre_CCE_Colorizing is not ON! (0:0:487:0)
+[10/11 01:51:23    159s] Move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um 
+[10/11 01:51:23    159s] (I)      Default pattern map key = interrupt_controller_default.
+[10/11 01:51:23    159s] (I)      Default pattern map key = interrupt_controller_default.
+[10/11 01:51:23    159s] OPERPROF:   Starting RefinePlace2 at level 2, MEM:1793.1M, EPOCH TIME: 1791663683.445790
+[10/11 01:51:23    159s] Starting refinePlace ...
+[10/11 01:51:23    159s] (I)      Default pattern map key = interrupt_controller_default.
+[10/11 01:51:23    159s] (I)      Default pattern map key = interrupt_controller_default.
+[10/11 01:51:23    159s] OPERPROF:     Starting AdvanceDataManager::initSiteMarkMT at level 3, MEM:1793.1M, EPOCH TIME: 1791663683.448021
+[10/11 01:51:23    159s] DDP initSite1 nrRow 20 nrJob 20
+[10/11 01:51:23    159s] OPERPROF:       Starting AdvanceDataManager::initSite1 at level 4, MEM:1793.1M, EPOCH TIME: 1791663683.448087
+[10/11 01:51:23    159s] OPERPROF:       Finished AdvanceDataManager::initSite1 at level 4, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.448142
+[10/11 01:51:23    159s] OPERPROF:       Starting AdvanceDataManager::markSite at level 4, MEM:1793.1M, EPOCH TIME: 1791663683.448185
+[10/11 01:51:23    159s] DDP markSite nrRow 20 nrJob 20
+[10/11 01:51:23    159s] OPERPROF:       Finished AdvanceDataManager::markSite at level 4, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.448240
+[10/11 01:51:23    159s] OPERPROF:     Finished AdvanceDataManager::initSiteMarkMT at level 3, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.448279
+[10/11 01:51:23    159s] OPERPROF:     Starting AdvanceRowAssigner::collectAndSplitActiveRowMT() at level 3, MEM:1793.1M, EPOCH TIME: 1791663683.448428
+[10/11 01:51:23    159s] OPERPROF:       Starting AdvanceRowAssigner::cut row at level 4, MEM:1793.1M, EPOCH TIME: 1791663683.448470
+[10/11 01:51:23    159s] OPERPROF:       Finished AdvanceRowAssigner::cut row at level 4, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.448566
+[10/11 01:51:23    159s] ** Cut row section cpu time 0:00:00.0.
+[10/11 01:51:23    159s]  ** Cut row section real time 0:00:00.0.
+[10/11 01:51:23    159s]  OPERPROF:     Finished AdvanceRowAssigner::collectAndSplitActiveRowMT() at level 3, CPU:0.000, REAL:0.000, MEM:1793.1M, EPOCH TIME: 1791663683.448626
+[10/11 01:51:23    159s]   Spread Effort: high, standalone mode, useDDP on.
+[10/11 01:51:23    159s] [CPU] RefinePlace/preRPlace (cpu=0:00:00.0, real=0:00:00.0, mem=1793.1MB) @(0:02:39 - 0:02:39).
+[10/11 01:51:23    159s] Move report: preRPlace moves 213 insts, mean move: 1.93 um, max move: 9.48 um 
+[10/11 01:51:23    159s] 	Max move on inst (irq_stack_reg[2][2]): (16.06, 48.81) --> (13.63, 41.76)
+[10/11 01:51:23    159s] 	Length: 33 sites, height: 1 rows, site name: gsclib090site, cell type: SDFFRHQX1
+[10/11 01:51:23    159s] wireLenOptFixPriorityInst 0 inst fixed
+[10/11 01:51:23    159s] Placement tweakage begins.
+[10/11 01:51:23    159s] wire length = 5.387e+03
+[10/11 01:51:23    159s] wire length = 5.081e+03
+[10/11 01:51:23    159s] Placement tweakage ends.
+[10/11 01:51:23    159s] Move report: tweak moves 41 insts, mean move: 2.35 um, max move: 9.57 um 
+[10/11 01:51:23    159s] 	Max move on inst (g6249): (2.90, 49.59) --> (12.47, 49.59)
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] Running Spiral with 1 thread in Normal Mode  fetchWidth=8 
+[10/11 01:51:23    159s] Move report: legalization moves 0 insts, mean move: 0.00 um, max move: 0.00 um spiral
+[10/11 01:51:23    159s] [CPU] RefinePlace/Spiral (cpu=0:00:00.0, real=0:00:00.0)
+[10/11 01:51:23    159s] [CPU] RefinePlace/Commit (cpu=0:00:00.0, real=0:00:00.0), EEQ(cpu=0:00:00.0, real=0:00:00.0), MTComit(cpu=0:00:00.0, real=0:00:00.0), leftOver(cpu=0:00:00.0, real=0:00:00.0)
+[10/11 01:51:23    159s] [CPU] RefinePlace/Legalization (cpu=0:00:00.0, real=0:00:00.0, mem=1817.1MB) @(0:02:39 - 0:02:39).
+[10/11 01:51:23    159s] Move report: Detail placement moves 213 insts, mean move: 2.08 um, max move: 9.48 um 
+[10/11 01:51:23    159s] 	Max move on inst (irq_stack_reg[2][2]): (16.06, 48.81) --> (13.63, 41.76)
+[10/11 01:51:23    159s] 	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1817.1MB
+[10/11 01:51:23    159s] Statistics of distance of Instance movement in refine placement:
+[10/11 01:51:23    159s]   maximum (X+Y) =         9.48 um
+[10/11 01:51:23    159s]   inst (irq_stack_reg[2][2]) with max move: (16.0605, 48.8115) -> (13.63, 41.76)
+[10/11 01:51:23    159s]   mean    (X+Y) =         2.08 um
+[10/11 01:51:23    159s] Summary Report:
+[10/11 01:51:23    159s] Instances move: 213 (out of 213 movable)
+[10/11 01:51:23    159s] Instances flipped: 0
+[10/11 01:51:23    159s] Mean displacement: 2.08 um
+[10/11 01:51:23    159s] Max displacement: 9.48 um (Instance: irq_stack_reg[2][2]) (16.0605, 48.8115) -> (13.63, 41.76)
+[10/11 01:51:23    159s] 	Length: 33 sites, height: 1 rows, site name: gsclib090site, cell type: SDFFRHQX1
+[10/11 01:51:23    159s] Total instances moved : 213
+[10/11 01:51:23    159s] OPERPROF:   Finished RefinePlace2 at level 2, CPU:0.029, REAL:0.029, MEM:1817.1M, EPOCH TIME: 1791663683.475069
+[10/11 01:51:23    159s] Total net bbox length = 4.475e+03 (2.163e+03 2.311e+03) (ext = 1.536e+03)
+[10/11 01:51:23    159s] Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1817.1MB
+[10/11 01:51:23    159s] [CPU] RefinePlace/total (cpu=0:00:00.0, real=0:00:00.0, mem=1817.1MB) @(0:02:39 - 0:02:39).
+[10/11 01:51:23    159s] *** Finished refinePlace (0:02:39 mem=1817.1M) ***
+[10/11 01:51:23    159s] GigaOpt Checkpoint: Intermediate DB Saving Point afterRefinePlace.39338.1
+[10/11 01:51:23    159s] OPERPROF: Finished RefinePlace at level 1, CPU:0.032, REAL:0.032, MEM:1817.1M, EPOCH TIME: 1791663683.475463
+[10/11 01:51:23    159s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1817.1M, EPOCH TIME: 1791663683.475511
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:213).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] All LLGs are deleted
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1817.1M, EPOCH TIME: 1791663683.476410
+[10/11 01:51:23    159s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1817.1M, EPOCH TIME: 1791663683.476658
+[10/11 01:51:23    159s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.002, REAL:0.002, MEM:1817.1M, EPOCH TIME: 1791663683.477776
+[10/11 01:51:23    159s] *** End of Placement (cpu=0:00:02.7, real=0:00:04.0, mem=1817.1M) ***
+[10/11 01:51:23    159s] Processing tracks to init pin-track alignment.
+[10/11 01:51:23    159s] z: 2, totalTracks: 1
+[10/11 01:51:23    159s] z: 4, totalTracks: 1
+[10/11 01:51:23    159s] z: 6, totalTracks: 1
+[10/11 01:51:23    159s] z: 8, totalTracks: 1
+[10/11 01:51:23    159s] #spOpts: mergeVia=F hrOri=1 hrSnap=1 rpCkHalo=4 
+[10/11 01:51:23    159s] All LLGs are deleted
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] OPERPROF: Starting spSiteCleanup(true) at level 1, MEM:1817.1M, EPOCH TIME: 1791663683.480353
+[10/11 01:51:23    159s] OPERPROF: Finished spSiteCleanup(true) at level 1, CPU:0.000, REAL:0.000, MEM:1817.1M, EPOCH TIME: 1791663683.480633
+[10/11 01:51:23    159s] OPERPROF: Starting spInitSiteArr at level 1, MEM:1817.1M, EPOCH TIME: 1791663683.480722
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] OPERPROF:   Starting spiInitFpSiteArr at level 2, MEM:1817.1M, EPOCH TIME: 1791663683.480899
+[10/11 01:51:23    159s] Max number of tech site patterns supported in site array is 256.
+[10/11 01:51:23    159s] Core basic site is gsclib090site
+[10/11 01:51:23    159s] OPERPROF:     Starting spiCheckSiteIfFastDPInitAvailable at level 3, MEM:1817.1M, EPOCH TIME: 1791663683.491421
+[10/11 01:51:23    159s] After signature check, allow fast init is true, keep pre-filter is true.
+[10/11 01:51:23    159s] After signature check and other controls, allow fast init is true, keep pre-filter is true.
+[10/11 01:51:23    159s] OPERPROF:     Finished spiCheckSiteIfFastDPInitAvailable at level 3, CPU:0.000, REAL:0.000, MEM:1817.1M, EPOCH TIME: 1791663683.491579
+[10/11 01:51:23    159s] Fast DP-INIT is on for default
+[10/11 01:51:23    159s] Layer info - lib-1st H=1, V=2.  Cell-FPin=1. Top-pin=2
+[10/11 01:51:23    159s] Atter site array init, number of instance map data is 0.
+[10/11 01:51:23    159s] OPERPROF:   Finished spiInitFpSiteArr at level 2, CPU:0.012, REAL:0.012, MEM:1817.1M, EPOCH TIME: 1791663683.492716
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s]  Pre_CCE_Colorizing is not ON! (0:0:487:0)
+[10/11 01:51:23    159s] OPERPROF: Finished spInitSiteArr at level 1, CPU:0.012, REAL:0.012, MEM:1817.1M, EPOCH TIME: 1791663683.492918
+[10/11 01:51:23    159s] OPERPROF: Starting spReportDensityMap (include fixed instaces) at level 1, MEM:1817.1M, EPOCH TIME: 1791663683.493013
+[10/11 01:51:23    159s] OPERPROF:   Starting Cal-LLG-Density-Map at level 2, MEM:1817.1M, EPOCH TIME: 1791663683.493110
+[10/11 01:51:23    159s] OPERPROF:   Finished Cal-LLG-Density-Map at level 2, CPU:0.000, REAL:0.000, MEM:1817.1M, EPOCH TIME: 1791663683.493214
+[10/11 01:51:23    159s] default core: bins with density > 0.750 = 16.67 % ( 1 / 6 )
+[10/11 01:51:23    159s] Density distribution unevenness ratio = 3.068%
+[10/11 01:51:23    159s] Density distribution unevenness ratio (U70) = 2.835%
+[10/11 01:51:23    159s] Density distribution unevenness ratio (U80) = 0.000%
+[10/11 01:51:23    159s] Density distribution unevenness ratio (U90) = 0.000%
+[10/11 01:51:23    159s] OPERPROF: Finished spReportDensityMap (include fixed instaces) at level 1, CPU:0.000, REAL:0.000, MEM:1817.1M, EPOCH TIME: 1791663683.493338
+[10/11 01:51:23    159s] OPERPROF: Starting spDPlaceCleanup(auto) at level 1, MEM:1817.1M, EPOCH TIME: 1791663683.493381
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] All LLGs are deleted
+[10/11 01:51:23    159s] Before cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] After cleanup instance map, number of data still kept is (map:0, fakeMap:0, inst:0).
+[10/11 01:51:23    159s] OPERPROF:   Starting spSiteCleanup(true) at level 2, MEM:1817.1M, EPOCH TIME: 1791663683.494069
+[10/11 01:51:23    159s] OPERPROF:   Finished spSiteCleanup(true) at level 2, CPU:0.000, REAL:0.000, MEM:1817.1M, EPOCH TIME: 1791663683.494307
+[10/11 01:51:23    159s] OPERPROF: Finished spDPlaceCleanup(auto) at level 1, CPU:0.002, REAL:0.002, MEM:1817.1M, EPOCH TIME: 1791663683.495061
+[10/11 01:51:23    159s] *** Free Virtual Timing Model ...(mem=1817.1M)
+[10/11 01:51:23    159s] **INFO: Enable pre-place timing setting for timing analysis
+[10/11 01:51:23    159s] Set Using Default Delay Limit as 101.
+[10/11 01:51:23    159s] **WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+[10/11 01:51:23    159s] Set Default Net Delay as 0 ps.
+[10/11 01:51:23    159s] Set Default Net Load as 0 pF. 
+[10/11 01:51:23    159s] **INFO: Analyzing IO path groups for slack adjustment
+[10/11 01:51:23    159s] Effort level <high> specified for reg2reg_tmp.39338 path_group
+[10/11 01:51:23    159s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/11 01:51:23    159s] #################################################################################
+[10/11 01:51:23    159s] # Design Stage: PreRoute
+[10/11 01:51:23    159s] # Design Name: interrupt_controller
+[10/11 01:51:23    159s] # Design Mode: 90nm
+[10/11 01:51:23    159s] # Analysis Mode: MMMC Non-OCV 
+[10/11 01:51:23    159s] # Parasitics Mode: No SPEF/RCDB 
+[10/11 01:51:23    159s] # Signoff Settings: SI Off 
+[10/11 01:51:23    159s] #################################################################################
+[10/11 01:51:23    159s] Calculate delays in BcWc mode...
+[10/11 01:51:23    159s] Topological Sorting (REAL = 0:00:00.0, MEM = 1817.1M, InitMEM = 1817.1M)
+[10/11 01:51:23    159s] Start delay calculation (fullDC) (1 T). (MEM=1817.05)
+[10/11 01:51:23    159s] End AAE Lib Interpolated Model. (MEM=1817.05 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/11 01:51:23    159s] Total number of fetched objects 276
+[10/11 01:51:23    159s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/11 01:51:23    159s] End delay calculation. (MEM=1840.75 CPU=0:00:00.0 REAL=0:00:00.0)
+[10/11 01:51:23    159s] End delay calculation (fullDC). (MEM=1840.75 CPU=0:00:00.1 REAL=0:00:00.0)
+[10/11 01:51:23    159s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 1840.7M) ***
+[10/11 01:51:23    159s] **INFO: Disable pre-place timing setting for timing analysis
+[10/11 01:51:23    159s] Set Using Default Delay Limit as 1000.
+[10/11 01:51:23    159s] Set Default Net Delay as 1000 ps.
+[10/11 01:51:23    159s] Set Default Net Load as 0.5 pF. 
+[10/11 01:51:23    159s] Info: Disable timing driven in postCTS congRepair.
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] Starting congRepair ...
+[10/11 01:51:23    159s] User Input Parameters:
+[10/11 01:51:23    159s] - Congestion Driven    : On
+[10/11 01:51:23    159s] - Timing Driven        : Off
+[10/11 01:51:23    159s] - Area-Violation Based : On
+[10/11 01:51:23    159s] - Start Rollback Level : -5
+[10/11 01:51:23    159s] - Legalized            : On
+[10/11 01:51:23    159s] - Window Based         : Off
+[10/11 01:51:23    159s] - eDen incr mode       : Off
+[10/11 01:51:23    159s] - Small incr mode      : Off
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] OPERPROF: Starting GP-eGR-Init at level 1, MEM:1831.2M, EPOCH TIME: 1791663683.758585
+[10/11 01:51:23    159s] OPERPROF: Finished GP-eGR-Init at level 1, CPU:0.006, REAL:0.006, MEM:1831.2M, EPOCH TIME: 1791663683.764517
+[10/11 01:51:23    159s] OPERPROF: Starting GP-eGR-Route-Cong-Est-Phase1 at level 1, MEM:1831.2M, EPOCH TIME: 1791663683.764607
+[10/11 01:51:23    159s] Starting Early Global Route congestion estimation: mem = 1831.2M
+[10/11 01:51:23    159s] (I)      ==================== Layers =====================
+[10/11 01:51:23    159s] (I)      +-----+----+---------+---------+--------+-------+
+[10/11 01:51:23    159s] (I)      | DB# | ID |    Name |    Type | #Masks | Extra |
+[10/11 01:51:23    159s] (I)      +-----+----+---------+---------+--------+-------+
+[10/11 01:51:23    159s] (I)      |  33 |  0 |    Cont |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   1 |  1 |  Metal1 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  34 |  1 |    Via1 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   2 |  2 |  Metal2 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  35 |  2 |    Via2 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   3 |  3 |  Metal3 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  36 |  3 |    Via3 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   4 |  4 |  Metal4 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  37 |  4 |    Via4 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   5 |  5 |  Metal5 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  38 |  5 |    Via5 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   6 |  6 |  Metal6 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  39 |  6 |    Via6 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   7 |  7 |  Metal7 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  40 |  7 |    Via7 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   8 |  8 |  Metal8 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      |  41 |  8 |    Via8 |     cut |      1 |       |
+[10/11 01:51:23    159s] (I)      |   9 |  9 |  Metal9 |    wire |      1 |       |
+[10/11 01:51:23    159s] (I)      +-----+----+---------+---------+--------+-------+
+[10/11 01:51:23    159s] (I)      |  64 | 64 |   Oxide |   other |        |    MS |
+[10/11 01:51:23    159s] (I)      |   0 |  0 |    Poly |   other |        |    MS |
+[10/11 01:51:23    159s] (I)      |  65 | 65 |    Nhvt | implant |        |       |
+[10/11 01:51:23    159s] (I)      |  66 | 66 |    Nimp | implant |        |       |
+[10/11 01:51:23    159s] (I)      |  67 | 67 |    Phvt | implant |        |       |
+[10/11 01:51:23    159s] (I)      |  68 | 68 |    Pimp | implant |        |       |
+[10/11 01:51:23    159s] (I)      |  69 | 69 |    Nzvt | implant |        |       |
+[10/11 01:51:23    159s] (I)      |  70 | 70 |  SiProt | implant |        |       |
+[10/11 01:51:23    159s] (I)      |  71 | 71 | OVERLAP | overlap |        |       |
+[10/11 01:51:23    159s] (I)      +-----+----+---------+---------+--------+-------+
+[10/11 01:51:23    159s] (I)      Started Import and model ( Curr Mem: 1831.23 MB )
+[10/11 01:51:23    159s] (I)      Default pattern map key = interrupt_controller_default.
+[10/11 01:51:23    159s] (I)      == Non-default Options ==
+[10/11 01:51:23    159s] (I)      Maximum routing layer                              : 9
+[10/11 01:51:23    159s] (I)      Number of threads                                  : 1
+[10/11 01:51:23    159s] (I)      Use non-blocking free Dbs wires                    : false
+[10/11 01:51:23    159s] (I)      Method to set GCell size                           : row
+[10/11 01:51:23    159s] (I)      Counted 27 PG shapes. We will not process PG shapes layer by layer.
+[10/11 01:51:23    159s] (I)      Use row-based GCell size
+[10/11 01:51:23    159s] (I)      Use row-based GCell align
+[10/11 01:51:23    159s] (I)      layer 0 area = 280000
+[10/11 01:51:23    159s] (I)      layer 1 area = 320000
+[10/11 01:51:23    159s] (I)      layer 2 area = 320000
+[10/11 01:51:23    159s] (I)      layer 3 area = 320000
+[10/11 01:51:23    159s] (I)      layer 4 area = 320000
+[10/11 01:51:23    159s] (I)      layer 5 area = 320000
+[10/11 01:51:23    159s] (I)      layer 6 area = 320000
+[10/11 01:51:23    159s] (I)      layer 7 area = 800000
+[10/11 01:51:23    159s] (I)      layer 8 area = 800000
+[10/11 01:51:23    159s] (I)      GCell unit size   : 5220
+[10/11 01:51:23    159s] (I)      GCell multiplier  : 1
+[10/11 01:51:23    159s] (I)      GCell row height  : 5220
+[10/11 01:51:23    159s] (I)      Actual row height : 5220
+[10/11 01:51:23    159s] (I)      GCell align ref   : 5220 5220
+[10/11 01:51:23    159s] [NR-eGR] Track table information for default rule: 
+[10/11 01:51:23    159s] [NR-eGR] Metal1 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal2 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal3 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal4 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal5 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal6 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal7 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal8 has single uniform track structure
+[10/11 01:51:23    159s] [NR-eGR] Metal9 has single uniform track structure
+[10/11 01:51:23    159s] (I)      =============== Default via ================
+[10/11 01:51:23    159s] (I)      +---+------------------+-------------------+
+[10/11 01:51:23    159s] (I)      | Z | Code  Single-Cut | Code  Multi-Cut   |
+[10/11 01:51:23    159s] (I)      +---+------------------+-------------------+
+[10/11 01:51:23    159s] (I)      | 1 |    2  VIA1V      |   89  VIA1_2CUT_V |
+[10/11 01:51:23    159s] (I)      | 2 |   10  VIA2X      |   91  VIA2_2CUT_V |
+[10/11 01:51:23    159s] (I)      | 3 |   22  VIA3X      |   92  VIA3_2CUT_H |
+[10/11 01:51:23    159s] (I)      | 4 |   34  VIA4X      |   94  VIA4_2CUT_H |
+[10/11 01:51:23    159s] (I)      | 5 |   46  VIA5X      |   97  VIA5_2CUT_V |
+[10/11 01:51:23    159s] (I)      | 6 |   58  VIA6X      |   98  VIA6_2CUT_H |
+[10/11 01:51:23    159s] (I)      | 7 |   71  VIA7V      |  101  VIA7_2CUT_V |
+[10/11 01:51:23    159s] (I)      | 8 |   79  VIA8X      |  102  VIA8_2CUT_H |
+[10/11 01:51:23    159s] (I)      +---+------------------+-------------------+
+[10/11 01:51:23    159s] [NR-eGR] Read 6 PG shapes
+[10/11 01:51:23    159s] [NR-eGR] Read 0 clock shapes
+[10/11 01:51:23    159s] [NR-eGR] Read 0 other shapes
+[10/11 01:51:23    159s] [NR-eGR] #Routing Blockages  : 0
+[10/11 01:51:23    159s] [NR-eGR] #Instance Blockages : 0
+[10/11 01:51:23    159s] [NR-eGR] #PG Blockages       : 6
+[10/11 01:51:23    159s] [NR-eGR] #Halo Blockages     : 0
+[10/11 01:51:23    159s] [NR-eGR] #Boundary Blockages : 0
+[10/11 01:51:23    159s] [NR-eGR] #Clock Blockages    : 0
+[10/11 01:51:23    159s] [NR-eGR] #Other Blockages    : 0
+[10/11 01:51:23    159s] (I)      Design has 0 blackboxes considered as all layer blockages.
+[10/11 01:51:23    159s] [NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[10/11 01:51:23    159s] [NR-eGR] Read 275 nets ( ignored 0 )
+[10/11 01:51:23    159s] (I)      early_global_route_priority property id does not exist.
+[10/11 01:51:23    159s] (I)      Read Num Blocks=6  Num Prerouted Wires=0  Num CS=0
+[10/11 01:51:23    159s] (I)      Layer 1 (V) : #blockages 0 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Layer 2 (H) : #blockages 0 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Layer 3 (V) : #blockages 0 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Layer 4 (H) : #blockages 0 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Layer 5 (V) : #blockages 0 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Layer 6 (H) : #blockages 0 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Layer 7 (V) : #blockages 0 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Layer 8 (H) : #blockages 6 : #preroutes 0
+[10/11 01:51:23    159s] (I)      Number of ignored nets                =      0
+[10/11 01:51:23    159s] (I)      Number of connected nets              =      0
+[10/11 01:51:23    159s] (I)      Number of fixed nets                  =      0.  Ignored: Yes
+[10/11 01:51:23    159s] (I)      Number of clock nets                  =      1.  Ignored: No
+[10/11 01:51:23    159s] (I)      Number of analog nets                 =      0.  Ignored: Yes
+[10/11 01:51:23    159s] (I)      Number of special nets                =      0.  Ignored: Yes
+[10/11 01:51:23    159s] (I)      Number of mixed signal nets           =      0.  Ignored: Yes
+[10/11 01:51:23    159s] (I)      Number of skip routing nets           =      0.  Ignored: Yes
+[10/11 01:51:23    159s] (I)      Number of nets with ignore route flag =      0.  Ignored: No
+[10/11 01:51:23    159s] (I)      Number of nets with one or no pins    =      0.  Ignored: Yes
+[10/11 01:51:23    159s] (I)      Number of two pin nets which has pins at the same location = 0.  Ignored: Yes
+[10/11 01:51:23    159s] [NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[10/11 01:51:23    159s] (I)      Ndr track 0 does not exist
+[10/11 01:51:23    159s] (I)      ---------------------Grid Graph Info--------------------
+[10/11 01:51:23    159s] (I)      Routing area        : (0, 0) - (116000, 114840)
+[10/11 01:51:23    159s] (I)      Core area           : (5220, 5220) - (110780, 109620)
+[10/11 01:51:23    159s] (I)      Site width          :   580  (dbu)
+[10/11 01:51:23    159s] (I)      Row height          :  5220  (dbu)
+[10/11 01:51:23    159s] (I)      GCell row height    :  5220  (dbu)
+[10/11 01:51:23    159s] (I)      GCell width         :  5220  (dbu)
+[10/11 01:51:23    159s] (I)      GCell height        :  5220  (dbu)
+[10/11 01:51:23    159s] (I)      Grid                :    23    22     9
+[10/11 01:51:23    159s] (I)      Layer numbers       :     1     2     3     4     5     6     7     8     9
+[10/11 01:51:23    159s] (I)      Vertical capacity   :     0  5220     0  5220     0  5220     0  5220     0
+[10/11 01:51:23    159s] (I)      Horizontal capacity :     0     0  5220     0  5220     0  5220     0  5220
+[10/11 01:51:23    159s] (I)      Default wire width  :   240   280   280   280   280   280   280   880   880
+[10/11 01:51:23    159s] (I)      Default wire space  :   240   280   280   280   280   280   280   800   800
+[10/11 01:51:23    159s] (I)      Default wire pitch  :   480   560   560   560   560   560   560  1680  1680
+[10/11 01:51:23    159s] (I)      Default pitch size  :   480   580   580   580   580   580   580  1740  1740
+[10/11 01:51:23    159s] (I)      First track coord   :   290   290   290   290   290   290   290  2030  2030
+[10/11 01:51:23    159s] (I)      Num tracks per GCell: 10.88  9.00  9.00  9.00  9.00  9.00  9.00  3.00  3.00
+[10/11 01:51:23    159s] (I)      Total num of tracks :   198   200   198   200   198   200   198    66    65
+[10/11 01:51:23    159s] (I)      Num of masks        :     1     1     1     1     1     1     1     1     1
+[10/11 01:51:23    159s] (I)      Num of trim masks   :     0     0     0     0     0     0     0     0     0
+[10/11 01:51:23    159s] (I)      --------------------------------------------------------
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] [NR-eGR] ============ Routing rule table ============
+[10/11 01:51:23    159s] [NR-eGR] Rule id: 0  Nets: 275
+[10/11 01:51:23    159s] (I)      ID:0 Default:yes NDR Track ID:0 NDR ViaID:-1 Extra space:0 #Shields:0 Max Demand(H/V):1/1
+[10/11 01:51:23    159s] (I)                    Layer    2    3    4    5    6    7     8     9 
+[10/11 01:51:23    159s] (I)                    Pitch  580  580  580  580  580  580  1740  1740 
+[10/11 01:51:23    159s] (I)             #Used tracks    1    1    1    1    1    1     1     1 
+[10/11 01:51:23    159s] (I)       #Fully used tracks    1    1    1    1    1    1     1     1 
+[10/11 01:51:23    159s] [NR-eGR] ========================================
+[10/11 01:51:23    159s] [NR-eGR] 
+[10/11 01:51:23    159s] (I)      =============== Blocked Tracks ===============
+[10/11 01:51:23    159s] (I)      +-------+---------+----------+---------------+
+[10/11 01:51:23    159s] (I)      | Layer | #Tracks | #Blocked | Blocked Ratio |
+[10/11 01:51:23    159s] (I)      +-------+---------+----------+---------------+
+[10/11 01:51:23    159s] (I)      |     1 |       0 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     2 |    4400 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     3 |    4554 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     4 |    4400 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     5 |    4554 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     6 |    4400 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     7 |    4554 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     8 |    1452 |        0 |         0.00% |
+[10/11 01:51:23    159s] (I)      |     9 |    1495 |      418 |        27.96% |
+[10/11 01:51:23    159s] (I)      +-------+---------+----------+---------------+
+[10/11 01:51:23    159s] (I)      Finished Import and model ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 1831.23 MB )
+[10/11 01:51:23    159s] (I)      Reset routing kernel
+[10/11 01:51:23    159s] (I)      Started Global Routing ( Curr Mem: 1831.23 MB )
+[10/11 01:51:23    159s] (I)      totalPins=894  totalGlobalPin=857 (95.86%)
+[10/11 01:51:23    159s] (I)      total 2D Cap : 29408 = (14756 H, 14652 V)
+[10/11 01:51:23    159s] [NR-eGR] Layer group 1: route 275 net(s) in layer range [2, 9]
+[10/11 01:51:23    159s] (I)      
+[10/11 01:51:23    159s] (I)      ============  Phase 1a Route ============
+[10/11 01:51:23    159s] (I)      Usage: 1856 = (872 H, 984 V) = (5.91% H, 6.72% V) = (2.276e+03um H, 2.568e+03um V)
+[10/11 01:51:23    159s] (I)      
+[10/11 01:51:23    159s] (I)      ============  Phase 1b Route ============
+[10/11 01:51:23    159s] (I)      Usage: 1856 = (872 H, 984 V) = (5.91% H, 6.72% V) = (2.276e+03um H, 2.568e+03um V)
+[10/11 01:51:23    159s] (I)      Overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.844160e+03um
+[10/11 01:51:23    159s] (I)      Congestion metric : 0.00%H 0.00%V, 0.00%HV
+[10/11 01:51:23    159s] (I)      Congestion threshold : each 60.00, sum 90.00
+[10/11 01:51:23    159s] (I)      
+[10/11 01:51:23    159s] (I)      ============  Phase 1c Route ============
+[10/11 01:51:23    159s] (I)      Usage: 1856 = (872 H, 984 V) = (5.91% H, 6.72% V) = (2.276e+03um H, 2.568e+03um V)
+[10/11 01:51:23    159s] (I)      
+[10/11 01:51:23    159s] (I)      ============  Phase 1d Route ============
+[10/11 01:51:23    159s] (I)      Usage: 1856 = (872 H, 984 V) = (5.91% H, 6.72% V) = (2.276e+03um H, 2.568e+03um V)
+[10/11 01:51:23    159s] (I)      
+[10/11 01:51:23    159s] (I)      ============  Phase 1e Route ============
+[10/11 01:51:23    159s] (I)      Usage: 1856 = (872 H, 984 V) = (5.91% H, 6.72% V) = (2.276e+03um H, 2.568e+03um V)
+[10/11 01:51:23    159s] [NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.844160e+03um
+[10/11 01:51:23    159s] (I)      
+[10/11 01:51:23    159s] (I)      ============  Phase 1l Route ============
+[10/11 01:51:23    159s] (I)                  capacity    demand   overflow    blocked   non-blocked   
+[10/11 01:51:23    159s] (I)      Layer  2:       4200      1112         0           0        4347    ( 0.00%) 
+[10/11 01:51:23    159s] (I)      Layer  3:       4356       842         0           0        4356    ( 0.00%) 
+[10/11 01:51:23    159s] (I)      Layer  4:       4200       155         0           0        4347    ( 0.00%) 
+[10/11 01:51:23    159s] (I)      Layer  5:       4356        44         0           0        4356    ( 0.00%) 
+[10/11 01:51:23    159s] (I)      Layer  6:       4200         0         0           0        4347    ( 0.00%) 
+[10/11 01:51:23    159s] (I)      Layer  7:       4356         0         0           0        4356    ( 0.00%) 
+[10/11 01:51:23    159s] (I)      Layer  8:       1386         0         0           0        1449    ( 0.00%) 
+[10/11 01:51:23    159s] (I)      Layer  9:       1035         0         0         300        1152    (20.66%) 
+[10/11 01:51:23    159s] (I)      Total:         28089      2153         0         300       28710    ( 1.03%) 
+[10/11 01:51:23    159s] (I)      
+[10/11 01:51:23    159s] [NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[10/11 01:51:23    159s] [NR-eGR]                        OverCon            
+[10/11 01:51:23    159s] [NR-eGR]                         #Gcell     %Gcell
+[10/11 01:51:23    159s] [NR-eGR]        Layer             (1-0)    OverCon
+[10/11 01:51:23    159s] [NR-eGR] ----------------------------------------------
+[10/11 01:51:23    159s] [NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR]  Metal9 ( 9)         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR] ----------------------------------------------
+[10/11 01:51:23    159s] [NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[10/11 01:51:23    159s] [NR-eGR] 
+[10/11 01:51:23    159s] (I)      Finished Global Routing ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 1839.23 MB )
+[10/11 01:51:23    159s] (I)      total 2D Cap : 29414 = (14762 H, 14652 V)
+[10/11 01:51:23    159s] [NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+[10/11 01:51:23    159s] Early Global Route congestion estimation runtime: 0.02 seconds, mem = 1839.2M
+[10/11 01:51:23    159s] OPERPROF: Finished GP-eGR-Route-Cong-Est-Phase1 at level 1, CPU:0.023, REAL:0.023, MEM:1839.2M, EPOCH TIME: 1791663683.787444
+[10/11 01:51:23    159s] OPERPROF: Starting HotSpotCal at level 1, MEM:1839.2M, EPOCH TIME: 1791663683.787493
+[10/11 01:51:23    159s] [hotspot] +------------+---------------+---------------+
+[10/11 01:51:23    159s] [hotspot] |            |   max hotspot | total hotspot |
+[10/11 01:51:23    159s] [hotspot] +------------+---------------+---------------+
+[10/11 01:51:23    159s] [hotspot] | normalized |          0.00 |          0.00 |
+[10/11 01:51:23    159s] [hotspot] +------------+---------------+---------------+
+[10/11 01:51:23    159s] Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+[10/11 01:51:23    159s] [hotspot] max/total 0.00/0.00, big hotspot (>10) total 0.00
+[10/11 01:51:23    159s] OPERPROF: Finished HotSpotCal at level 1, CPU:0.000, REAL:0.000, MEM:1839.2M, EPOCH TIME: 1791663683.787745
+[10/11 01:51:23    159s] Skipped repairing congestion.
+[10/11 01:51:23    159s] OPERPROF: Starting GP-eGR-Wiring-Phae2 at level 1, MEM:1839.2M, EPOCH TIME: 1791663683.787823
+[10/11 01:51:23    159s] Starting Early Global Route wiring: mem = 1839.2M
+[10/11 01:51:23    159s] (I)      ============= Track Assignment ============
+[10/11 01:51:23    159s] (I)      Started Track Assignment (1T) ( Curr Mem: 1839.23 MB )
+[10/11 01:51:23    159s] (I)      Initialize Track Assignment ( max pin layer : 9 )
+[10/11 01:51:23    159s] (I)      Run Multi-thread track assignment
+[10/11 01:51:23    159s] (I)      Finished Track Assignment (1T) ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1839.23 MB )
+[10/11 01:51:23    159s] (I)      Started Export ( Curr Mem: 1839.23 MB )
+[10/11 01:51:23    159s] [NR-eGR]                 Length (um)  Vias 
+[10/11 01:51:23    159s] [NR-eGR] ----------------------------------
+[10/11 01:51:23    159s] [NR-eGR]  Metal1  (1H)             0   851 
+[10/11 01:51:23    159s] [NR-eGR]  Metal2  (2V)          2288  1240 
+[10/11 01:51:23    159s] [NR-eGR]  Metal3  (3H)          2232    72 
+[10/11 01:51:23    159s] [NR-eGR]  Metal4  (4V)           465    26 
+[10/11 01:51:23    159s] [NR-eGR]  Metal5  (5H)           120     0 
+[10/11 01:51:23    159s] [NR-eGR]  Metal6  (6V)             0     0 
+[10/11 01:51:23    159s] [NR-eGR]  Metal7  (7H)             0     0 
+[10/11 01:51:23    159s] [NR-eGR]  Metal8  (8V)             0     0 
+[10/11 01:51:23    159s] [NR-eGR]  Metal9  (9H)             0     0 
+[10/11 01:51:23    159s] [NR-eGR] ----------------------------------
+[10/11 01:51:23    159s] [NR-eGR]          Total         5105  2189 
+[10/11 01:51:23    159s] [NR-eGR] --------------------------------------------------------------------------
+[10/11 01:51:23    159s] [NR-eGR] Total half perimeter of net bounding box: 4475um
+[10/11 01:51:23    159s] [NR-eGR] Total length: 5105um, number of vias: 2189
+[10/11 01:51:23    159s] [NR-eGR] --------------------------------------------------------------------------
+[10/11 01:51:23    159s] [NR-eGR] Total eGR-routed clock nets wire length: 303um, number of vias: 151
+[10/11 01:51:23    159s] [NR-eGR] --------------------------------------------------------------------------
+[10/11 01:51:23    159s] (I)      Finished Export ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1839.23 MB )
+[10/11 01:51:23    159s] Early Global Route wiring runtime: 0.01 seconds, mem = 1773.2M
+[10/11 01:51:23    159s] OPERPROF: Finished GP-eGR-Wiring-Phae2 at level 1, CPU:0.010, REAL:0.010, MEM:1773.2M, EPOCH TIME: 1791663683.797406
+[10/11 01:51:23    159s] Tdgp not successfully inited but do clear! skip clearing
+[10/11 01:51:23    159s] End of congRepair (cpu=0:00:00.0, real=0:00:00.0)
+[10/11 01:51:23    159s] *** Finishing placeDesign default flow ***
+[10/11 01:51:23    159s] **placeDesign ... cpu = 0: 0: 4, real = 0: 0: 5, mem = 1773.2M **
+[10/11 01:51:23    159s] Tdgp not successfully inited but do clear! skip clearing
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] *** Summary of all messages that are not suppressed in this session:
+[10/11 01:51:23    159s] Severity  ID               Count  Summary                                  
+[10/11 01:51:23    159s] WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+[10/11 01:51:23    159s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[10/11 01:51:23    159s] *** Message Summary: 3 warning(s), 0 error(s)
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] *** placeDesign #1 [finish] : cpu/real = 0:00:04.3/0:00:05.3 (0.8), totSession cpu/real = 0:02:39.6/0:15:39.4 (0.2), mem = 1773.2M
+[10/11 01:51:23    159s] 
+[10/11 01:51:23    159s] =============================================================================================
+[10/11 01:51:23    159s]  Final TAT Report : placeDesign #1                                              21.15-s110_1
+[10/11 01:51:23    159s] =============================================================================================
+[10/11 01:51:23    159s]  Step Name                  Count        Real  (       % )      Step Total Real / CPU  Scale
+[10/11 01:51:23    159s] ---------------------------------------------------------------------------------------------
+[10/11 01:51:23    159s] [ TimingUpdate           ]      6   0:00:00.0  (   0.9 % )     0:00:00.0 /  0:00:00.1    1.3
+[10/11 01:51:23    159s] [ FullDelayCalc          ]      3   0:00:00.2  (   4.2 % )     0:00:00.2 /  0:00:00.2    1.0
+[10/11 01:51:23    159s] [ MISC                   ]          0:00:05.1  (  94.9 % )     0:00:05.1 /  0:00:04.0    0.8
+[10/11 01:51:23    159s] ---------------------------------------------------------------------------------------------
+[10/11 01:51:23    159s]  placeDesign #1 TOTAL               0:00:05.3  ( 100.0 % )     0:00:05.3 /  0:00:04.3    0.8
+[10/11 01:51:23    159s] ---------------------------------------------------------------------------------------------
+[10/11 01:51:23    159s] 
+[10/11 01:51:37    161s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Oct 11 01:51:37 2026
+  Total CPU time:     0:02:41
+  Total real time:    0:15:56
+  Peak memory (main): 1665.45MB
+
+[10/11 01:51:37    161s] 
+[10/11 01:51:37    161s] *** Memory Usage v#1 (Current mem = 1785.441M, initial mem = 483.871M) ***
+[10/11 01:51:37    161s] 
+[10/11 01:51:37    161s] *** Summary of all messages that are not suppressed in this session:
+[10/11 01:51:37    161s] Severity  ID               Count  Summary                                  
+[10/11 01:51:37    161s] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[10/11 01:51:37    161s] WARNING   IMPLF-105            2  The layer '%s' specified in SAMENET spac...
+[10/11 01:51:37    161s] WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+[10/11 01:51:37    161s] ERROR     IMPPTN-963           2  Either specified pin name for the select...
+[10/11 01:51:37    161s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[10/11 01:51:37    161s] ERROR     IMPSYT-16250         4  Choose the pin list first.               
+[10/11 01:51:37    161s] WARNING   IMPVL-159          958  Pin '%s' of cell '%s' is defined in LEF ...
+[10/11 01:51:37    161s] WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+[10/11 01:51:37    161s] WARNING   IMPPP-170            6  The power planner failed to create a wir...
+[10/11 01:51:37    161s] WARNING   IMPPP-4051          16  Failed to add rings, because the IO cell...
+[10/11 01:51:37    161s] WARNING   IMPPP-220           16  The power planner does not create core r...
+[10/11 01:51:37    161s] WARNING   IMPSR-468           16  Cannot find any standard cell pin connec...
+[10/11 01:51:37    161s] WARNING   IMPSR-1253           4  Unable to find any standard cell pin con...
+[10/11 01:51:37    161s] WARNING   IMPSR-1254           4  Unable to connect the specified objects,...
+[10/11 01:51:37    161s] WARNING   IMPSR-1256           4  Unable to find any CORE class pad pin of...
+[10/11 01:51:37    161s] WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+[10/11 01:51:37    161s] WARNING   IMPCTE-290         200  Could not locate cell %s in any library ...
+[10/11 01:51:37    161s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[10/11 01:51:37    161s] *** Message Summary: 1239 warning(s), 6 error(s)
+[10/11 01:51:37    161s] 
+[10/11 01:51:37    161s] --- Ending "Innovus" (totcpu=0:02:42, real=0:15:55, mem=1785.4M) ---

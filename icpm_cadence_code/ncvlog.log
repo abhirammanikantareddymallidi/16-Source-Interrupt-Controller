@@ -1,0 +1,54 @@
+ncvlog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,52|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,57|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,66|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,75|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,79|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,86|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,94|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,98|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,107|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,117|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,131|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,134|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,136|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,142|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,149|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,152|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+        tick();
+             |
+ncvlog: *W,TMTPAR (/home/vlsi53/Desktop/icpm/tb_interrupt_controller.v,154|13): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'nchelp ncvlog TMTPAR'  for further information.
+ncvlog: Memory Usage - 21.4M program + 28.4M data = 49.7M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)
