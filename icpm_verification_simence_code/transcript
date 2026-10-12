@@ -1,0 +1,71 @@
+# //  Questa Sim-64
+# //  Version 2025.3_2 linux_x86_64 Nov 20 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vsim work.tb_interrupt_controller
+# ** Note: (vsim-220) '/home/siemens/SiemensEDA/solidosim/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# vsim work.tb_interrupt_controller 
+# Start time: 15:00:15 on Oct 11,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-220) '/home/siemens/SiemensEDA/solidosim/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# Loading work.tb_interrupt_controller(fast)
+vlog -reportprogress 300 -work work /home/siemens/Desktop/tcpm/interrupt_controller.v /home/siemens/Desktop/tcpm/tb_interrupt_controller.v
+# QuestaSim-64 vlog 2025.3_2 Compiler 2025.11 Nov 20 2025
+# Start time: 15:01:06 on Oct 11,2026
+# vlog -reportprogress 300 -work work /home/siemens/Desktop/tcpm/interrupt_controller.v /home/siemens/Desktop/tcpm/tb_interrupt_controller.v 
+# ** Note: (vlog-220) '/home/siemens/SiemensEDA/solidosim/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# -- Compiling module interrupt_controller
+# -- Compiling module tb_interrupt_controller
+# 
+# Top level modules:
+# 	tb_interrupt_controller
+# End time: 15:01:06 on Oct 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_interrupt_controller -voptargs=+acc
+# End time: 15:01:18 on Oct 11,2026, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 0
+# ** Note: (vsim-220) '/home/siemens/SiemensEDA/solidosim/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# vsim work.tb_interrupt_controller -voptargs="+acc" 
+# Start time: 15:01:18 on Oct 11,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_interrupt_controller(fast)
+# Loading work.interrupt_controller(fast)
+add wave -position end  sim:/tb_interrupt_controller/clk
+add wave -position end  sim:/tb_interrupt_controller/reset
+add wave -position end  sim:/tb_interrupt_controller/irq
+add wave -position end  sim:/tb_interrupt_controller/mask
+add wave -position end  sim:/tb_interrupt_controller/trigger_type
+add wave -position end  sim:/tb_interrupt_controller/cpu_ack
+add wave -position end  sim:/tb_interrupt_controller/cpu_eoi
+add wave -position end  sim:/tb_interrupt_controller/cpu_irq
+add wave -position end  sim:/tb_interrupt_controller/irq_id
+add wave -position end  sim:/tb_interrupt_controller/active
+add wave -position end  sim:/tb_interrupt_controller/stack_full
+add wave -position end  sim:/tb_interrupt_controller/stack_empty
+run -all
+# PASS: level IRQ5 detected
+# PASS: IRQ5 acknowledged
+# PASS: higher-priority IRQ2 offered
+# PASS: IRQ2 acknowledged as nested interrupt
+# FAIL: IRQ5 was not restored
+# PASS: EOI returned controller to idle
+# FAIL: masked IRQ7 should not be offered
+# FAIL: unmasked IRQ7 was not offered
+# PASS: rising-edge IRQ1 detected
+# Testbench completed. Review PASS/FAIL messages.
+# ** Note: $finish    : /home/siemens/Desktop/tcpm/tb_interrupt_controller.v(159)
+#    Time: 176 ns  Iteration: 0  Instance: /tb_interrupt_controller
+# 1
+# Break in Module tb_interrupt_controller at /home/siemens/Desktop/tcpm/tb_interrupt_controller.v line 159
+# End time: 15:20:10 on Oct 11,2026, Elapsed time: 0:18:52
+# Errors: 0, Warnings: 0

@@ -1,0 +1,27 @@
+ncsim(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> run
+PASS: level IRQ5 detected
+PASS: IRQ5 acknowledged
+PASS: higher-priority IRQ2 offered
+PASS: IRQ2 acknowledged as nested interrupt
+FAIL: IRQ5 was not restored
+PASS: EOI returned controller to idle
+FAIL: masked IRQ7 should not be offered
+FAIL: unmasked IRQ7 was not offered
+PASS: rising-edge IRQ1 detected
+Testbench completed. Review PASS/FAIL messages.
+Simulation complete via $finish(1) at time 176 NS + 0
+./tb_interrupt_controller.v:159         $finish;
+ncsim> probe -create -shm tb_interrupt_controller.active tb_interrupt_controller.clk tb_interrupt_controller.cpu_ack tb_interrupt_controller.cpu_eoi tb_interrupt_controller.cpu_irq tb_interrupt_controller.irq tb_interrupt_controller.irq_id tb_interrupt_controller.mask tb_interrupt_controller.reset tb_interrupt_controller.stack_empty tb_interrupt_controller.stack_full tb_interrupt_controller.trigger_type
+Created default SHM database ncsim.shm
+Created probe 1
+ncsim> run
+ncsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+ncsim> run
+ncsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+ncsim> ncsim: Memory Usage - 38.6M program + 287.9M data = 326.5M total (329.2M Peak)
+ncsim: CPU Usage - 1.6s system + 1.0s user = 2.6s total (225.7s, 1.2% cpu)

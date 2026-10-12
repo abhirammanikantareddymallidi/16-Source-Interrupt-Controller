@@ -1,0 +1,17 @@
+/home/siemens/Desktop/tcpm/interrupt_controller.v {1 {vlog -work work -vopt -stats=none /home/siemens/Desktop/tcpm/interrupt_controller.v
+QuestaSim-64 vlog 2025.3_2 Compiler 2025.11 Nov 20 2025
+** Note: (vlog-220) '/home/siemens/Desktop/tcpm/ICPM.mpf' is used as the ini file.
+-- Compiling module interrupt_controller
+
+Top level modules:
+	interrupt_controller
+
+} {} {}} /home/siemens/Desktop/tcpm/tb_interrupt_controller.v {1 {vlog -work work -vopt -stats=none /home/siemens/Desktop/tcpm/tb_interrupt_controller.v
+QuestaSim-64 vlog 2025.3_2 Compiler 2025.11 Nov 20 2025
+** Note: (vlog-220) '/home/siemens/Desktop/tcpm/ICPM.mpf' is used as the ini file.
+-- Compiling module tb_interrupt_controller
+
+Top level modules:
+	tb_interrupt_controller
+
+} {} {}}

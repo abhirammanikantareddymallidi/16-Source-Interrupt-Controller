@@ -1,0 +1,484 @@
+
+@/home/siemens/Desktop/tcpm/oasys.log.01:1093
+libc: 2.28-stable
+
+Timestamp: 1791712067.407193662
+---
+PID=26120 0.193052866 0.150250 0.042805 program start
+Complete list of environment variables at program start
+_ /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/oasysGui
+APRISA_HOME /home/siemens/SiemensEDA/AP_2025.4.1
+BASH_FUNC__module_raw%% {() {  unset _mlshdbg;
+ if [ "${MODULES_SILENT_SHELL_DEBUG:-0}" = '1' ]; then
+ case "$-" in 
+ *v*x*)
+ set +vx;
+ _mlshdbg='vx'
+ ;;
+ *v*)
+ set +v;
+ _mlshdbg='v'
+ ;;
+ *x*)
+ set +x;
+ _mlshdbg='x'
+ ;;
+ *)
+ _mlshdbg=''
+ ;;
+ esac;
+ fi;
+ unset _mlre _mlIFS;
+ if [ -n "${IFS+x}" ]; then
+ _mlIFS=$IFS;
+ fi;
+ IFS=' ';
+ for _mlv in ${MODULES_RUN_QUARANTINE:-};
+ do
+ if [ "${_mlv}" = "${_mlv##*[!A-Za-z0-9_]}" -a "${_mlv}" = "${_mlv#[0-9]}" ]; then
+ if [ -n "`eval 'echo ${'$_mlv'+x}'`" ]; then
+ _mlre="${_mlre:-}${_mlv}_modquar='`eval 'echo ${'$_mlv'}'`' ";
+ fi;
+ _mlrv="MODULES_RUNENV_${_mlv}";
+ _mlre="${_mlre:-}${_mlv}='`eval 'echo ${'$_mlrv':-}'`' ";
+ fi;
+ done;
+ if [ -n "${_mlre:-}" ]; then
+ eval `eval ${_mlre} /usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash '"$@"'`;
+ else
+ eval `/usr/bin/tclsh /usr/share/Modules/libexec/modulecmd.tcl bash "$@"`;
+ fi;
+ _mlstatus=$?;
+ if [ -n "${_mlIFS+x}" ]; then
+ IFS=$_mlIFS;
+ else
+ unset IFS;
+ fi;
+ unset _mlre _mlv _mlrv _mlIFS;
+ if [ -n "${_mlshdbg:-}" ]; then
+ set -$_mlshdbg;
+ fi;
+ unset _mlshdbg;
+ return $_mlstatus
+}}
+BASH_FUNC_ml%% {() {  module ml "$@"
+}}
+BASH_FUNC_module%% {() {  _module_raw "$@" 2>&1
+}}
+BASH_FUNC_scl%% {() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}}
+BASH_FUNC_switchml%% {() {  typeset swfound=1;
+ if [ "${MODULES_USE_COMPAT_VERSION:-0}" = '1' ]; then
+ typeset swname='main';
+ if [ -e /usr/share/Modules/libexec/modulecmd.tcl ]; then
+ typeset swfound=0;
+ unset MODULES_USE_COMPAT_VERSION;
+ fi;
+ else
+ typeset swname='compatibility';
+ if [ -e /usr/share/Modules/libexec/modulecmd-compat ]; then
+ typeset swfound=0;
+ MODULES_USE_COMPAT_VERSION=1;
+ export MODULES_USE_COMPAT_VERSION;
+ fi;
+ fi;
+ if [ $swfound -eq 0 ]; then
+ echo "Switching to Modules $swname version";
+ source /usr/share/Modules/init/bash;
+ else
+ echo "Cannot switch to Modules $swname version, command not found";
+ return 1;
+ fi
+}}
+BASH_FUNC_which%% {() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}}
+CALIBRE_HOME /home/siemens/siemens_software/aok_cal_2025.4_36.20
+COLORTERM truecolor
+DBUS_SESSION_BUS_ADDRESS unix:path=/run/user/1002/bus,guid=88d48c450e4143fcf52434736acad988
+DBUS_STARTER_ADDRESS unix:path=/run/user/1002/bus,guid=88d48c450e4143fcf52434736acad988
+DBUS_STARTER_BUS_TYPE session
+DESKTOP_SESSION gnome-classic
+DISPLAY :0
+GDK_BACKEND x11
+GDM_LANG en_US.UTF-8
+GDMSESSION gnome-classic
+GNOME_DESKTOP_SESSION_ID this-is-deprecated
+GNOME_SHELL_SESSION_MODE classic
+GNOME_TERMINAL_SCREEN /org/gnome/Terminal/screen/bffde43d_4481_44d2_b00d_1635b1148a32
+GNOME_TERMINAL_SERVICE :1.82
+GUESTFISH_INIT {\e[1;34m}
+GUESTFISH_OUTPUT {\e[0m}
+GUESTFISH_PS1 {\[\e[1;32m\]><fs>\[\e[0;31m\] }
+GUESTFISH_RESTORE {\e[0m}
+HISTCONTROL ignoredups
+HISTSIZE 1000
+HOME /home/siemens
+HOSTNAME klef-vlsi5.kluniversity.in
+INVOCATION_ID c7b324f35e8b420bbd6b7e58bf088a37
+JOURNAL_STREAM 9:257579
+LANG en_US.UTF-8
+LD_LIBRARY_PATH /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/lib/Linux-x86_64-O:/home/siemens/SiemensEDA/solidosim/questasim/QPS_2025.3_2/linux_x86_64/lib:/home/siemens/SiemensEDA/solidosim/questasim/QPS_2025.3_2/linux_x86_64/lib
+LESSOPEN {||/usr/bin/lesspipe.sh %s}
+LM_LICENSE_FILE 29000@10.5.1.2
+LOADEDMODULES {}
+LOGNAME siemens
+LS_COLORS {rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:}
+MAIL /var/spool/mail/siemens
+MANAGERPID 15518
+MANPATH /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/doc/man::
+MGC_AMS_HOME /home/siemens/SiemensEDA/solidosim
+MGLS_LICENSE_FILE 29000@10.5.1.2
+MODULEPATH /etc/scl/modulefiles:/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+MODULEPATH_modshare /usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+MODULES_CMD /usr/share/Modules/libexec/modulecmd.tcl
+MODULES_RUN_QUARANTINE {LD_LIBRARY_PATH LD_PRELOAD}
+MODULESHOME /usr/share/Modules
+OASYS_HOME /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1
+OASYSLD_LICENSE_FILE /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/license.lic
+PATH /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin:/home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O:/home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/lib/share/formalpro:/home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/lib/share/onespin:/home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/lib/share/slec:/home/siemens/SiemensEDA/AP_2025.4.1/bin:/home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin:/home/siemens/siemensinstall/solidosim/questasim/bin:/home/siemens/siemensinstall/solidosim/questasim/bin:/home/siemens/siemens_software/aok_cal_2025.4_36.20/bin:/home/siemens/SiemensEDA/solidosim/bin:/home/siemens/SiemensEDA/solidosim/bin:/home/siemens/SiemensEDA/solidosim/share/python3.13/bin:/home/siemens/SiemensEDA/solidosim/bin:/home/siemens/SiemensEDA/AP_2025.4.1/bin:/home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin:/home/siemens/siemensinstall/solidosim/questasim/bin:/home/siemens/siemensinstall/solidosim/questasim/bin:/home/siemens/siemens_software/aok_cal_2025.4_36.20/bin:/home/siemens/SiemensEDA/solidosim/bin:/home/siemens/SiemensEDA/solidosim/bin:/home/siemens/SiemensEDA/solidosim/share/python3.13/bin:/home/siemens/SiemensEDA/solidosim/bin:/home/siemens/.local/bin:/home/siemens/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/siemens/SiemensEDA/custom_ic-2025-4/bin:/home/siemens/SiemensEDA/solidosim/questasim/bin:/home/siemens/SiemensEDA/custom_ic-2025-4/bin:/home/siemens/SiemensEDA/solidosim/questasim/bin
+PWD /home/siemens/Desktop/tcpm
+QPS_BINDIR /home/siemens/SiemensEDA/solidosim/questasim/QPS_2025.3_2/linux_x86_64/bin
+QPS_HOME /home/siemens/SiemensEDA/solidosim/questasim/QPS_2025.3_2
+QPS_LIBDIR /home/siemens/SiemensEDA/solidosim/questasim/QPS_2025.3_2/linux_x86_64/lib
+QPS_PLATFORM linux_x86_64
+QT_IM_MODULE ibus
+RT_CMD {/home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/oasys -gui}
+RT_HOME /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1
+RT_LIBPATH /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/lib
+RT_MANPATH /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/doc/man
+RT_PID 26110
+RT_SIGSTKSZ 16
+RT_TCL_PATH /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/tcl
+RT_TMP /tmp/oasys.26110
+RT_WRAPPER_SCRIPT /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/oasys
+SDE_HOME /home/siemens/SiemensEDA/solidosim
+SDE_ROOT /home/siemens/SiemensEDA/solidosim
+SESSION_MANAGER local/unix:@/tmp/.ICE-unix/15680,unix/unix:/tmp/.ICE-unix/15680
+SHELL /bin/bash
+SHLVL 3
+SSH_AGENT_PID 15713
+SSH_ASKPASS /usr/libexec/openssh/gnome-ssh-askpass
+SSH_AUTH_SOCK /run/user/1002/keyring/ssh
+TCL_LIBRARY /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/tcl/library
+TERM xterm-256color
+USER siemens
+USERNAME siemens
+VTE_VERSION 5204
+which_declare {declare -f}
+WINDOWPATH 2
+XAUTHORITY /run/user/1002/gdm/Xauthority
+XDG_CURRENT_DESKTOP GNOME-Classic:GNOME
+XDG_DATA_DIRS /home/siemens/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+XDG_MENU_PREFIX gnome-
+XDG_RUNTIME_DIR /run/user/1002
+XDG_SEAT seat0
+XDG_SESSION_DESKTOP gnome-classic
+XDG_SESSION_ID 5
+XDG_SESSION_TYPE x11
+XDG_VTNR 2
+XMODIFIERS @im=ibus
+---
+
+Timestamp: 1791712067.409232585
+---
+Soft resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -S}
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 30097
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 81920
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 30097
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1791712067.411022473
+---
+Hard resource limits:
+
+Executing: /bin/bash -f -c {ulimit -a -H}
+core file size          (blocks, -c) unlimited
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 30097
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 262144
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 30097
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+---
+
+Timestamp: 1791712067.435572856
+---
+CPU Information
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 158
+model name	: Intel(R) Core(TM) i3-8100T CPU @ 3.10GHz
+stepping	: 11
+microcode	: 0xb4
+cpu MHz		: 3100.000
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds mmio_stale_data retbleed
+bogomips	: 6192.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+processor	: 1
+core id		: 1
+apicid		: 2
+initial apicid	: 2
+
+processor	: 2
+core id		: 2
+apicid		: 4
+initial apicid	: 4
+
+processor	: 3
+cpu MHz		: 3100.325
+core id		: 3
+apicid		: 6
+initial apicid	: 6
+
+This host has 4 processors, with most parameters identical to the first one, except as noted above.
+
+---
+
+Timestamp: 1791712067.480397294
+---
+Miscellaneous system info for process PID=26120
+Recorded at Sun Oct 11 15:17:47 IST 2026
+
+Executing: uptime
+ 15:17:47 up 15:38,  1 user,  load average: 0.08, 0.46, 0.43
+
+Executing: uname -a
+Linux klef-vlsi5.kluniversity.in 4.18.0-425.3.1.el8.x86_64 #1 SMP Fri Sep 30 11:45:06 EDT 2022 x86_64 x86_64 x86_64 GNU/Linux
+
+Executing: free
+              total        used        free      shared  buff/cache   available
+Mem:        7769048     2633740     1877456      585644     3257852     4244544
+Swap:       8097788           0     8097788
+
+Executing: ps u 26120
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+siemens    26120  0.0  0.8 429088 68688 pts/1    S+   15:17   0:00 /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/oasysGui -- -gui
+
+Executing: cat /etc/redhat-release
+Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+Executing: ldd /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/oasysGui
+	linux-vdso.so.1 (0x00007ffc29baa000)
+	libQt5PrintSupport.so.5 => /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/../../lib/Linux-x86_64-O/libQt5PrintSupport.so.5 (0x00007fb6814f4000)
+	libQt5Widgets.so.5 => /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/../../lib/Linux-x86_64-O/libQt5Widgets.so.5 (0x00007fb680a9c000)
+	libQt5Gui.so.5 => /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/../../lib/Linux-x86_64-O/libQt5Gui.so.5 (0x00007fb680100000)
+	libQt5Core.so.5 => /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/../../lib/Linux-x86_64-O/libQt5Core.so.5 (0x00007fb67f569000)
+	libmemsh-102.so => /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/../../lib/Linux-x86_64-O/libmemsh-102.so (0x00007fb68199f000)
+	libncurses.so.5 => /lib64/libncurses.so.5 (0x00007fb67f342000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fb67f122000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fb67ef1e000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fb67ed16000)
+	libX11.so.6 => /lib64/libX11.so.6 (0x00007fb67e9d3000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007fb67e7bb000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fb67e439000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fb67e073000)
+	libgthread-2.0.so.0 => /lib64/libgthread-2.0.so.0 (0x00007fb67de71000)
+	libglib-2.0.so.0 => /lib64/libglib-2.0.so.0 (0x00007fb67db58000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fb681795000)
+	libtinfo.so.5 => /lib64/libtinfo.so.5 (0x00007fb67d92d000)
+	libxcb.so.1 => /home/siemens/SiemensEDA/Oasys-RTL-2022.2.R1/bin/Linux-x86_64-O/../../lib/Linux-x86_64-O/libxcb.so.1 (0x00007fb67d6f8000)
+	libgnutls.so.30 => /lib64/libgnutls.so.30 (0x00007fb67d307000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00007fb67d096000)
+	libXau.so.6 => /lib64/libXau.so.6 (0x00007fb67ce92000)
+	libXdmcp.so.6 => /lib64/libXdmcp.so.6 (0x00007fb67cc8c000)
+	libp11-kit.so.0 => /lib64/libp11-kit.so.0 (0x00007fb67c962000)
+	libidn2.so.0 => /lib64/libidn2.so.0 (0x00007fb67c744000)
+	libunistring.so.2 => /lib64/libunistring.so.2 (0x00007fb67c3c3000)
+	libtasn1.so.6 => /lib64/libtasn1.so.6 (0x00007fb67c1b0000)
+	libnettle.so.6 => /lib64/libnettle.so.6 (0x00007fb67bf76000)
+	libhogweed.so.4 => /lib64/libhogweed.so.4 (0x00007fb67bd46000)
+	libgmp.so.10 => /lib64/libgmp.so.10 (0x00007fb67baae000)
+	libffi.so.6 => /lib64/libffi.so.6 (0x00007fb67b8a5000)
+
+Examining disk space in the following directories:
+  Current directory: /home/siemens/Desktop/tcpm
+  Oasys' temp directory: /tmp/oasys.26110/ (normalized path: /tmp/oasys.26110)
+  RT_TMP directory: /tmp/oasys.26110
+
+Executing: df /home/siemens/Desktop/tcpm /tmp/oasys.26110 /tmp/oasys.26110
+Filesystem            1K-blocks      Used Available Use% Mounted on
+/dev/mapper/rhel-home 416740544 325390568  91349976  79% /home
+/dev/mapper/rhel-root  73364480  10942632  62421848  15% /
+/dev/mapper/rhel-root  73364480  10942632  62421848  15% /
+
+
+---
+
+Timestamp: 1791712128.305901632
+---
+NDbC::beforeConcurrency uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1791712128.310255467
+---
+PID=26120 Allocated sock7f12961a7410 for mpg, port=2000
+---
+
+1791712128.310821198 Parent PID=26120 2.316767342 1.987335 0.329433 forking worker # 1
+Timestamp: 1791712128.311296874
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1791712128.311296874
+---
+NDbC::beforeForking uniquifier=<offset=1,modulo=5>
+
+---
+
+Timestamp: 1791712128.328411244
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1791712128.328595276
+---
+Parent 26120 started child 26239 
+
+---
+
+1791712128.329398341 Parent PID=26120 2.335343924 2.003921 0.331424 forking worker # 2
+Timestamp: 1791712128.329642596
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1791712128.329642596
+---
+NDbC::beforeForking uniquifier=<offset=2,modulo=5>
+
+---
+
+Timestamp: 1791712128.342819223
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1791712128.342874413
+---
+Parent 26120 started child 26242 
+
+---
+
+1791712128.343549813 Parent PID=26120 2.349563791 2.013787 0.335777 forking worker # 3
+Timestamp: 1791712128.343778483
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1791712128.343778483
+---
+NDbC::beforeForking uniquifier=<offset=3,modulo=5>
+
+---
+
+Timestamp: 1791712128.357722692
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1791712128.357785733
+---
+Parent 26120 started child 26253 
+
+---
+
+1791712128.358441641 Parent PID=26120 2.364399860 2.027406 0.336994 forking worker # 4
+Timestamp: 1791712128.358641249
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1791712128.358641249
+---
+NDbC::beforeForking uniquifier=<offset=4,modulo=5>
+
+---
+
+Timestamp: 1791712128.376910683
+---
+NDbC::afterForking uniquifier=<offset=0,modulo=5>
+
+---
+
+Timestamp: 1791712128.376973703
+---
+Parent 26120 started child 26263 
+
+---
+
+1791712128.377673217 BEGIN areaOpt PID=26120 2.379593163 2.033980 0.345614
+1791712129.086366920 END areaOpt PID=26120 2.459490122 2.097702 0.361788
+1791712129.146006561 BEGIN constProp PID=26120 2.497465127 2.129696 0.367770
+1791712129.151149472 END constProp PID=26120 2.502307614 2.133258 0.369050
+1791712129.372607615 BEGIN runTimingOptimizationLoopLevel2 PID=26120 2.723094256 2.353075 0.370019
+1791712129.374983471 END runTimingOptimizationLoopLevel2 PID=26120 2.725185142 2.355167 0.370019
+1791712129.375633478 BEGIN runTimingOptimizationLoopLevel2 PID=26120 2.725832451 2.355814 0.370019
+1791712129.377858442 END runTimingOptimizationLoopLevel2 PID=26120 2.727812860 2.357795 0.370019
+1791712129.671940924 BEGIN Optimize3Top::place PID=26120 3.020228710 2.627157 0.393072
+1791712130.103319255 END Optimize3Top::place PID=26120 3.541039022 3.079273 0.461765
+1791712130.105230617 BEGIN runTimingOptimizationLoopLevel2 PID=26120 3.542942955 3.081177 0.461765
+1791712130.107549281 END runTimingOptimizationLoopLevel2 PID=26120 3.545001291 3.083236 0.461765
+1791712130.108347943 BEGIN runTimingOptimizationLoopLevel2 PID=26120 3.545795264 3.084030 0.461765
+1791712130.110550270 END runTimingOptimizationLoopLevel2 PID=26120 3.547713642 3.085602 0.462112
+1791712130.110756649 BEGIN incrPlace PID=26120 3.547920823 3.085602 0.462319
+1791712130.111136569 END incrPlace PID=26120 3.548292912 3.085602 0.462691
+
+@/home/siemens/Desktop/tcpm/oasys.log.01:15169
+info: (0) optimizing 'irq_id[2]' (path group default) @ 1625.2ps(1/1) (1 secs)
